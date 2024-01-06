@@ -20,9 +20,9 @@ h1, h2 {
 
 p {
     color: #555;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typeWriter 2s steps(40) forwards;
+    font-size: 16px; /* Adjust font size for better visibility on mobile */
+    line-height: 1.6; /* Improve line spacing for better readability */
+    white-space: normal; /* Allow text to wrap on smaller screens */
 }
 
 @keyframes typeWriter {
