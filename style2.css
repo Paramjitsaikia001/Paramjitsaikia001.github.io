@@ -85,21 +85,24 @@
     letter-spacing: 1px;
 }
 
-main {
+main{
     display: flex;
     align-items: center;
     margin: 0px;
-    background-color: rgb(157, 184, 219);
+    background-color: rgb(34, 103, 194);
     justify-content: center;
+    height: auto;
+    width: auto;
 }
 
-.main {
+.mainR {
     height: 150px;
     border: 2px solid black;
     width: 150px;
     align-items: center;
     background-color: aquamarine;
     border-radius: 15px;
+    box-shadow: 10px 5px 10px black;
 }
 
 .class5 {
@@ -114,34 +117,7 @@ main {
     width: 100px;
     height: 30px;
     background-color: #cc0052;
+    color: white;
+    border-radius: 10px;
 }
 
-/* Media Queries for Mobile */
-@media only screen and (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .searchtab {
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .logintab {
-        width: 100%;
-        text-align: center;
-    }
-
-    .button {
-        flex-direction: column;
-    }
-
-    .signup {
-        width: 100%;
-    }
-
-    .main {
-        width: 100%;
-    }
-}
