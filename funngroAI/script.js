@@ -1,3 +1,11 @@
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', () => {
+    menu.classList.toggle('active');
+});
+
+
 // JavaScript for animating the numbers
 document.addEventListener('DOMContentLoaded', () => {
     const counters = document.querySelectorAll('.number');
@@ -43,24 +51,101 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// JavaScript for carousel navigation
-// let currentIndex = 0;
+let currentIndex = 0;
 
-// function moveSlide(direction) {
-//   const slides = document.querySelectorAll('.slide');
-//   const slidesToShow = 2; // Number of slides to show
-//   const gap = 20; // Gap between slides
-//   const slideWidth = 200 + gap; // Total width of a slide including the gap
+const slides = document.querySelectorAll('.slide');
+const slider = document.querySelector('.fun-reviews-slider');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
 
-//   const totalSlides = slides.length;
+// For larger screens: 3 slides at a time, with looping
+function slideNextLargeScreen() {
+    if (currentIndex < slides.length - 3) {
+        currentIndex++;
+    } else {
+        currentIndex = 0;  // Loop back to the first slide
+    }
+    slider.style.transform = `translateX(-${currentIndex * (100 / 3)}%)`; // 3 slides transition
+}
 
-//   currentIndex += direction;
+function slidePrevLargeScreen() {
+    if (currentIndex > 0) {
+        currentIndex--;
+    } else {
+        currentIndex = slides.length - 3;  // Loop back to the last set of slides
+    }
+    slider.style.transform = `translateX(-${currentIndex * (100 / 3)}%)`; // 3 slides transition
+}
 
-//   if (currentIndex < 0) {
-//     currentIndex = totalSlides - slidesToShow;
-//   } else if (currentIndex > totalSlides - slidesToShow) {
-//     currentIndex = 0;
-//   }
+// For medium screens: 2 slides at a time, with looping
+function slideNextMediumScreen() {
+    if (currentIndex < slides.length - 2) {
+        currentIndex++;
+    } else {
+        currentIndex = 0;  // Loop back to the first slide
+    }
+    slider.style.transform = `translateX(-${currentIndex * (100 / 2)}%)`; // 2 slides transition
+}
 
-//   document.querySelector('.slider').style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-// }
+function slidePrevMediumScreen() {
+    if (currentIndex > 0) {
+        currentIndex--;
+    } else {
+        currentIndex = slides.length - 2;  // Loop back to the last set of slides
+    }
+    slider.style.transform = `translateX(-${currentIndex * (100 / 2)}%)`; // 2 slides transition
+}
+
+// For smaller screens: 1 slide at a time, with looping
+function slideNextSmallScreen() {
+    if (currentIndex < slides.length - 1) {
+        currentIndex++;
+    } else {
+        currentIndex = 0;  // Loop back to the first slide
+    }
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`; // 1 slide transition
+}
+
+function slidePrevSmallScreen() {
+    if (currentIndex > 0) {
+        currentIndex--;
+    } else {
+        currentIndex = slides.length - 1;  // Loop back to the last slide
+    }
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`; // 1 slide transition
+}
+
+// Initialize the slider based on window width
+function initializeSlider() {
+    if (window.innerWidth <= 800) {
+        // Small screens: 1 slide, looping
+        nextButton.removeEventListener('click', slideNextLargeScreen);
+        prevButton.removeEventListener('click', slidePrevLargeScreen);
+        nextButton.removeEventListener('click', slideNextMediumScreen);
+        prevButton.removeEventListener('click', slidePrevMediumScreen);
+        nextButton.addEventListener('click', slideNextSmallScreen);
+        prevButton.addEventListener('click', slidePrevSmallScreen);
+    } else if (window.innerWidth > 800 && window.innerWidth <= 1000) {
+        // Medium screens: 2 slides, looping
+        nextButton.removeEventListener('click', slideNextLargeScreen);
+        prevButton.removeEventListener('click', slidePrevLargeScreen);
+        nextButton.removeEventListener('click', slideNextSmallScreen);
+        prevButton.removeEventListener('click', slidePrevSmallScreen);
+        nextButton.addEventListener('click', slideNextMediumScreen);
+        prevButton.addEventListener('click', slidePrevMediumScreen);
+    } else {
+        // Larger screens: 3 slides, looping
+        nextButton.removeEventListener('click', slideNextSmallScreen);
+        prevButton.removeEventListener('click', slidePrevSmallScreen);
+        nextButton.removeEventListener('click', slideNextMediumScreen);
+        prevButton.removeEventListener('click', slidePrevMediumScreen);
+        nextButton.addEventListener('click', slideNextLargeScreen);
+        prevButton.addEventListener('click', slidePrevLargeScreen);
+    }
+}
+
+// Initialize the slider on page load
+initializeSlider();
+
+// Reinitialize slider on window resize
+window.addEventListener('resize', initializeSlider);
