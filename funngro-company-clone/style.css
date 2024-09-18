@@ -16,6 +16,7 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
 }
+
 /* Header Styles */
 .container {
     display: flex;
@@ -169,7 +170,7 @@ header nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1.1) 70%), url('shark-tank-india.jpeg');
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 1.1) 70%), url('images/shark-tank-india.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -205,13 +206,18 @@ header nav ul li a:hover {
     font-size: 18px;
     margin-bottom: 10px;
 }
-.hire-for-company button{
+
+.hire-for-company button {
     font-family: "Montserrat", sans-serif;
-    background-color: #0056b3;
-    width: 20rem;
+    background-color: #259b81;
+    width: 25rem;
+    height: 3rem;
     border-radius: 30px;
+    color: white;
+    font-size: 20px;
 
 }
+
 .app-buttons {
     display: flex;
     align-items: center;
@@ -233,6 +239,31 @@ header nav ul li a:hover {
     font-size: 14px;
 }
 
+.popular-tags {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.popular-tags ul {
+    display: flex;
+    /* grid-template-columns: auto auto auto auto; */
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.popular-tags ul li p {
+    margin: 5px;
+    border: 2px solid white;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    background-color: #4b4a4a52;
+    text-decoration: none;
+    font-size: 10px;
+}
 
 .feature {
     position: relative;
@@ -365,24 +396,59 @@ header nav ul li a:hover {
     .feature {
         font-size: 14vw;
     }
+
+    .hire-for-company button {
+        width: 90%;
+        margin: 40px;
+        /* padding: 30px; */
+    }
+
+    .popular-tags {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .popular-tags ul {
+        display: flexbox;
+    }
+
+    .popular-tags ul li a {
+
+        margin: 5px;
+    }
 }
 
 /* Statistics Section Styles */
+.statistic-section {
+    display: flex;
+    margin: 0 20px;
+}
+
+.statistic-section .read-more button {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: #007bff;
+}
+
 .statistics {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 50px 20px;
-    background: rgb(4, 38, 38);
-    background: linear-gradient(13deg, rgba(4, 38, 38, 1) 23%, rgba(3, 71, 71, 1) 100%);
+    padding: 20px 20px;
+    /* background: rgb(4, 38, 38);
+    background: linear-gradient(13deg, rgba(4, 38, 38, 1) 23%, rgba(3, 71, 71, 1) 100%); */
+    background-image: url("images/638c7c3395fb43356a404b1a_stats-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 20px;
+    background-position: 50%;
     margin: 0;
 }
 
 .stat-item {
     display: flex;
-    flex-direction: column;
     text-align: center;
     align-items: center;
     justify-content: space-evenly;
@@ -403,6 +469,9 @@ header nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
+    .statistic-section {
+        flex-direction: column;
+    }
 
     .stat-item {
         flex-direction: row;
@@ -418,72 +487,203 @@ header nav ul li a:hover {
 
 }
 
+/* project ideas style  */
 
-/* Why Teens Section Styles */
-.why-teens {
-    text-align: center;
-    padding: 50px 0;
-    background-color: #042626;
-    margin: 0 30px;
+.projects-ideas {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 80px auto;
     font-family: "Montserrat", sans-serif;
 }
 
-.why-teens h2 {
-    font-size: 28px;
-    margin: 20px;
-}
-
-.why-teens p {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
-.reasons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.reason-box {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    background-color: #1a1a1a9f;
-    border: 2px solid #1a1a1a;
-    padding: 20px;
-    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-    border-radius: 10px;
+.project-ideas-line h2 {
     text-align: center;
-}
-
-.reason-box:hover {
-    background-color: #28a7468c;
-    color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.reason-box img {
-    width: 80px;
-    height: 80px;
-    margin: 20px auto;
-}
-
-.reason-box h3 {
-    font-size: 20px;
+    font-size: 32px;
     margin-bottom: 10px;
 }
 
-@media (max-width: 768px) {
-    .reasons {
+.project-ideas-line p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.projects-ideas-slide-container {
+    overflow: hidden;
+    position: relative;
+    width: 960px;
+    margin: 50px 0;
+    border-radius: 20px;
+}
+
+.projects-ideas-slider {
+    display: flex;
+    margin: 0;
+    /* overflow: hidden; */
+    transition: transform 0.5s ease-in-out;
+    /* Adjust the width to accommodate 7 slides */
+}
+
+.projects-ideas-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    gap: 20px;
+    border-radius: 20px;
+    min-width: 300px;
+    /* Show 3 slides at a time */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgb(56, 55, 55);
+    background-color: #0c303b;
+    text-align: center;
+    margin: 10px;
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid white;
+}
+
+.projects-ideas-slide p:nth-child(1),
+.projects-ideas-slide p:nth-child(2) {
+    color: rgb(0, 75, 214);
+    font-family: sans-serif;
+    font-weight: 550;
+}
+
+.projects-ideas-slide p:nth-child(3) {
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-weight: 500;
+}
+
+.projects-ideas-slide button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    font-weight: 550;
+}
+
+.projects-ideas img {
+    width: 50px;
+    margin: 0 20px;
+}
+
+.projects-ideas-slide button:hover {
+    background-color: #0056b3;
+}
+
+.project-slide-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.project-slide-controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    margin: 0 5px;
+    border-radius: 5px;
+}
+
+.project-slide-controls button:hover {
+    background-color: #0056b3;
+}
+
+@media only screen and (max-width: 768px) {
+    .projects-ideas-slide-container {
+        width: 640px;
+        margin: 10px;
+    }
+
+    .projects-ideas-slide {
+        width: 300px;
+        /* 2 slides per view */
+    }
+}
+
+/* Small screens (Mobile) - Show 1 slide at a time */
+@media only screen and (max-width: 480px) {
+    .projects-ideas-slide-container {
+        width: 320px;
+        margin: 10px;
+    }
+
+    .projects-ideas-slide {
+        width: 200px;
+        /* 1 slide per view */
+    }
+}
+
+
+
+/* funngro-happy-members */
+.happy-funngro-members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.happy-funngro-members-reviews {
+    display: flex;
+    width: 99.99%;
+    margin: 10px;
+}
+
+.happy-funngro-members-reviewer {
+
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgb(56, 55, 55);
+    background-color: #0c303b;
+    text-align: center;
+    margin: 10px;
+    font-family: "Montserrat", sans-serif;
+    border: 2px solid white;
+}
+
+.happy-funngro-members-reviewers-details {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+}
+
+.happy-funngro-members-reviewers-details img {
+    padding: 5px;
+    width: 30%;
+}
+
+.happy-funngro-members-reviewers-details .name-passion {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.happy-funngro-members-reviewers-line {
+    margin: 20px 0;
+}
+
+@media only screen and (max-width:869px) {
+    .happy-funngro-members-reviews {
         flex-direction: column;
-        align-items: center;
     }
 }
 
 /* //.categories */
 .categories {
     display: grid;
+    background-color: #022e36;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, auto);
     grid-template-areas:
@@ -491,15 +691,16 @@ header nav ul li a:hover {
         "box6 box7 box7 box7 box8"
         "box9 box10 box11 box12 box13";
     gap: 10px;
-    padding: 50px;
+    padding: 80px;
     font-family: "Montserrat", sans-serif;
 }
 
 .box {
-    background-color: #1E90FF;
+    perspective: 1000px;
+}
+
+.box-inner {
     color: white;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -511,19 +712,18 @@ header nav ul li a:hover {
     position: relative;
     margin: 5px;
     font-family: "Montserrat", sans-serif;
+    border-radius: 20px;
 }
 
-.box img {
+.box-inner img {
     width: 60px;
     margin: 20px;
 }
 
-.box:hover:not(.box7) {
-    transform: rotateY(180deg);
-}
-
-.box::before,
-.box::after {
+.box-inner-front,
+.box-inner-back {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 0;
     left: 0;
@@ -532,161 +732,156 @@ header nav ul li a:hover {
     backface-visibility: hidden;
 }
 
-.box::before {
-    background-color: #007bff;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
-}
 
-.box::after {
-    background-color: #0056b3;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5em;
+.box:hover>.box-inner {
     transform: rotateY(180deg);
-    border-radius: 10px;
 }
 
-.box:nth-child(1) {
-    grid-area: box1;
+
+.box-inner .box-inner-front {
+    background-color: #091a41;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.box-inner>.box-inner-back {
+    border-radius: 20px;
+
+    background-color: #00455a;
+    color: white;
+    transform: rotateY(180deg);
+    /* Start hidden (flipped) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-inner>.box-inner-back a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+.box-inner>.box-inner-back a:hover {
+    color: white;
+}
+
+.box-inner:nth-child(1) {
     background-color: #092442;
-    border-radius: 10px;
+    grid-area: box1;
 }
 
-.box:nth-child(1)::after {
-    content: "Manage social media pages of companies";
-    font-size: 20px;
-}
-
-.box:nth-child(2) {
+.box-inner:nth-child(2) {
     grid-area: box2;
     background-color: #092442;
-    border-radius: 10px;
 }
 
-.box:nth-child(2)::after {
-    content: "Create and edit videos for companies and use your video creation skills";
-    font-size: 20px;
-}
-
-.box:nth-child(3) {
+.box-inner:nth-child(3) {
     grid-area: box3;
     background-color: #092442;
-    border-radius: 10px;
 }
 
-.box:nth-child(3)::after {
-    content: "Design and build a website for companies";
-    font-size: 20px;
-}
 
-.box:nth-child(4) {
+.box-inner:nth-child(4) {
     grid-area: box4;
     background-color: #092442;
     border-radius: 10px;
 }
 
-.box:nth-child(4)::after {
-    content: "Create Reels, Memes, posts and videos for social media handles of companies";
-    font-size: 20px;
-}
 
-.box:nth-child(5) {
+.box-inner:nth-child(5) {
     grid-area: box5;
     background-color: #092442;
     border-radius: 10px;
 }
 
-.box:nth-child(5)::after {
-    content: "Develop market ready apps for companies";
-    font-size: 20px;
-}
 
-.box:nth-child(6) {
+.box-inner:nth-child(6) {
     grid-area: box6;
     background-color: #092442;
     border-radius: 10px;
 }
 
-.box:nth-child(6)::after {
-    content: "Run Surveys for companies and complete research assignments";
-    font-size: 20px;
+
+
+.box-inner:hover:not(.box7) {
+    transform: rotateY(180deg);
 }
 
 .box:nth-child(7) {
     grid-area: box7;
-    background-color: #092442;
-    border-radius: 10px;
+    background-color: #091a41;
+    border: 1px solid black;
+    border-radius: 20px;
     padding: 2.5rem 1.25rem;
+    text-align: center;
 }
 
-.box:nth-child(8) {
+.box-inner:nth-child(8) {
     grid-area: box8;
     background-color: #092442;
     border-radius: 10px;
 }
 
-.box:nth-child(8)::after {
+.box-inner:nth-child(8)::after {
     content: "Test company products and give feedback, app, website, physical product";
     font-size: 20px;
 }
 
-.box:nth-child(9) {
+.box-inner:nth-child(9) {
     grid-area: box9;
     background-color: #092442;
     border-radius: 10px;
 }
 
-.box:nth-child(9)::after {
+.box-inner:nth-child(9)::after {
     content: "Logos, Brochures, pamphlets, website, posts etc";
     font-size: 20px;
 }
 
-.box:nth-child(10) {
+.box-inner:nth-child(10) {
     grid-area: box10;
     background-color: #092442;
     border-radius: 10px;
 }
 
-.box:nth-child(10)::after {
+.box-inner:nth-child(10)::after {
     content: "Blogs, articles, website content and a lot more. Write for companies";
     font-size: 20px;
 }
 
-.box:nth-child(11) {
+.box-inner:nth-child(11) {
     grid-area: box11;
     background-color: #092442;
     border-radius: 10px;
 }
 
-.box:nth-child(11)::after {
+.box-inner:nth-child(11)::after {
     content: "Work with companies in recording content with your voice over skills";
     font-size: 20px;
 }
 
-.box:nth-child(12) {
+.box-inner:nth-child(12) {
     grid-area: box12;
     background-color: #092442;
     border-radius: 10px;
 }
 
-.box:nth-child(12)::after {
+.box-inner:nth-child(12)::after {
     content: "Create databases for companies with your data research skills";
     font-size: 20px;
 }
 
-.box:nth-child(13) {
+.box-inner:nth-child(13) {
     grid-area: box13;
     background-color: #092442;
     border-radius: 10px;
 }
 
-.box:nth-child(13)::after {
+.box-inner:nth-child(13)::after {
     content: "Drive sales for companies by acquiring customers";
     font-size: 20px;
 }
@@ -694,6 +889,7 @@ header nav ul li a:hover {
 @media only screen and (max-width:400px) {
 
     .categories {
+        padding: 90px 40px;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(13, auto);
         grid-template-areas:
@@ -724,6 +920,7 @@ header nav ul li a:hover {
 @media (min-width: 400px) and (max-width:800px) {
 
     .categories {
+        padding: 90px 20px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(7, auto);
         grid-template-areas:
@@ -736,6 +933,10 @@ header nav ul li a:hover {
             "box12 box13";
     }
 }
+
+
+
+
 
 /* Featured In Section Styles */
 .featured-in {

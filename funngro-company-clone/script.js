@@ -51,6 +51,59 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+
+let currentSlide = 0;
+const Projectslides = document.querySelectorAll('.projects-ideas-slide');
+const Projectslider = document.querySelector('.projects-ideas-slider');
+const ProjectprevButton = document.getElementById('prev');
+const ProjectnextButton = document.getElementById('next');
+
+// Show the correct number of slides per view based on screen size
+function getSlidesPerView() {
+    if (window.innerWidth <= 480) {
+        return 1; // Mobile: 1 slide per view
+    } else if (window.innerWidth <= 768) {
+        return 2; // Tablet: 2 slides per view
+    } else {
+        return 3; // Desktop: 3 slides per view
+    }
+}
+
+// Show the appropriate number of slides and ensure it wraps around when at the end
+function updateSlider() {
+    const slidesPerView = getSlidesPerView();
+    Projectslider.style.transform = `translateX(-${currentSlide * 100 / slidesPerView}%)`;
+}
+
+ProjectnextButton.addEventListener('click', () => {
+    const slidesPerView = getSlidesPerView();
+    if (currentSlide < Projectslides.length - slidesPerView) {
+        currentSlide++;
+    } else {
+        currentSlide = 0; // Loop back to the beginning
+    }
+    updateSlider();
+});
+
+ProjectprevButton.addEventListener('click', () => {
+    const slidesPerView = getSlidesPerView();
+    if (currentSlide > 0) {
+        currentSlide--;
+    } else {
+        currentSlide = Projectslides.length - slidesPerView; // Go to the last set of slides
+    }
+    updateSlider();
+});
+
+// Optional: Recalculate the number of slides per view on window resize
+window.addEventListener('resize', updateSlider);
+
+
+
+
+
+
+
 let currentIndex = 0;
 
 const slides = document.querySelectorAll('.slide');
