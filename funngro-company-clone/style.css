@@ -934,8 +934,98 @@ header nav ul li a:hover {
     }
 }
 
+/* we trusted by */
+.trusters{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 30px;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+        "headline headline headline"
+        "company partners company2";
+    justify-content: center;
+}
+.truster-heading{
+    grid-area: headline;
+    text-align: center;
+}
+.truster-companies{
+    grid-area: company;
+    display: flex;
+    width: 300px;
+    height: 400px;
+    flex-direction: column;
+    background: no-repeat url(images/638ddca34f9b6d707bf594f9_Rectangle\ 479.png);
+    background-size: cover;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid white;
 
+}
+.truster-companies .company-logo{
+    display: flex;
+    flex-direction: column;
+}
+.truster-companies img{
+    width: 40px;
+}
+.truster-partners{
+    grid-area: partners;
+    display: flex;
+    width: 300px;
+    height: 400px;
+    flex-direction: column;
+    background: no-repeat url(images/638ddca34f9b6d707bf594f9_Rectangle\ 479.png);
+    background-size: cover;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid white;
 
+}
+
+.truster-partners >.headline{
+    background-color: #005f87;
+   width: 100%;
+   height: 20%;
+   justify-content: center;
+   box-sizing: border-box;
+}
+.truster-partners .company-logo{
+    display: flex;
+    flex-direction: column;
+}
+.truster-partners img{
+    width: 40px;
+    margin: 20px 0;
+
+}
+.truster-companies2{
+    grid-area:company2;
+    display: flex;
+    width: 300px;
+    height: 400px;
+    flex-direction: column;
+    background: no-repeat url(images/638ddca34f9b6d707bf594f9_Rectangle\ 479.png);
+    background-size: cover;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid white;
+
+}
+.truster-companies2 .company-logo{
+    display: flex;
+    flex-direction: column;
+}
+.truster-companies2 img{
+    width: 40px;
+    margin: 30px 0;
+}
 
 
 /* Featured In Section Styles */
