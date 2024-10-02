@@ -60,9 +60,9 @@ const ProjectnextButton = document.getElementById('next');
 
 // Show the correct number of slides per view based on screen size
 function getSlidesPerView() {
-    if (window.innerWidth <= 480) {
+    if (window.innerWidth <= 780) {
         return 1; // Mobile: 1 slide per view
-    } else if (window.innerWidth <= 768) {
+    } else if (window.innerWidth <= 1200) {
         return 2; // Tablet: 2 slides per view
     } else {
         return 3; // Desktop: 3 slides per view
