@@ -381,10 +381,13 @@ header nav ul li a:hover {
     justify-content: space-around;
     align-items: center;
     padding: 50px 20px;
-    background: rgb(4, 38, 38);
-    background: linear-gradient(13deg, rgba(4, 38, 38, 1) 23%, rgba(3, 71, 71, 1) 100%);
+    background-image: url("images/638c7c3395fb43356a404b1a_stats-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 20px;
+    background-position: 50%;
     margin: 0;
+    height: 15rem;
 }
 
 .stat-item {
