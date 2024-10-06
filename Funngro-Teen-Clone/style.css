@@ -386,8 +386,7 @@ header nav ul li a:hover {
     background-size: cover;
     border-radius: 20px;
     background-position: 50%;
-    margin: 0;
-    height: 15rem;
+    margin:0 5% ;
 }
 
 .stat-item {
@@ -418,6 +417,7 @@ header nav ul li a:hover {
         flex-direction: row;
         justify-content: left;
         gap: 20px;
+     
     }
 
     .stat-item-desc {
