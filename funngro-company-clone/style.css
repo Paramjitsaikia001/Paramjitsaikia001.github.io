@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 /* General Styles */
 * {
     margin: 0;
@@ -16,16 +17,19 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
 }
-#header-line{
+
+#header-line {
     text-align: center;
     background-color: #2ab162;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
 }
-#header-line p{
+
+#header-line p {
     font-size: 0.8rem;
-    padding:0.5rem 0;
+    padding: 0.5rem 0;
 }
+
 /* Header Styles */
 .container {
     display: flex;
@@ -72,7 +76,8 @@ header nav ul li a,
     text-decoration: none;
     font-family: "Montserrat", sans-serif;
 }
-.menu button{
+
+.menu button {
     color: #fff;
     text-decoration: none;
     padding: 0.8rem 2rem;
@@ -82,6 +87,7 @@ header nav ul li a,
     border-radius: 4rem;
     font-size: 1rem;
 }
+
 header nav ul li a:hover {
     color: rgb(17, 76, 204);
 }
@@ -210,7 +216,7 @@ header nav ul li a:hover {
 .hero-content-lines {
     display: flex;
     flex-direction: column;
- text-align: left;
+    text-align: left;
     font-family: "Montserrat", sans-serif;
     width: 90%;
     gap: 0.5rem;
@@ -289,7 +295,7 @@ header nav ul li a:hover {
 .feature {
     position: relative;
     z-index: 2;
-    font-family: 'Impact',"Anton", sans-serif;
+    font-family: 'Impact', "Anton", sans-serif;
     font-size: 8vw;
     /* Dynamic sizing based on viewport */
     font-weight: 400;
@@ -473,6 +479,7 @@ header nav ul li a:hover {
 
 .stat-item {
     display: flex;
+    flex-direction: row;
     text-align: center;
     align-items: center;
     justify-content: space-evenly;
@@ -1086,23 +1093,26 @@ header nav ul li a:hover {
 
 @media only screen and (max-width:768px) {
 
-    .trusters-partners-companies{
+    .trusters-partners-companies {
         flex-direction: column;
         padding: 0;
     }
-    .truster{
+
+    .truster {
         width: 70vw;
     }
 }
-@media (min-width:768px) and (max-width:1200px){
-    .trusters-partners-companies{
+
+@media (min-width:768px) and (max-width:1200px) {
+    .trusters-partners-companies {
         justify-content: center;
         width: 100vw;
         height: auto;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         padding: 0;
     }
-    .truster{
+
+    .truster {
         width: 40vw;
     }
 }
@@ -1153,13 +1163,15 @@ header nav ul li a:hover {
 }
 
 @media only screen and (max-width:1268px) {
-    .why-work-with-teen-contents{
-flex-direction: column;
+    .why-work-with-teen-contents {
+        flex-direction: column;
     }
-    .why-work-with-teen-contents img{
+
+    .why-work-with-teen-contents img {
         width: 70vw;
     }
 }
+
 /* Featured In Section Styles */
 .featured-in {
     text-align: center;
@@ -1207,19 +1219,22 @@ flex-direction: column;
 }
 
 @media only screen and (max-width:768px) {
-    .featured-in{
+    .featured-in {
         padding: 3rem 2rem;
     }
+
     .carousel-details {
         display: flex;
         flex-direction: column;
-        padding-top:2rem;
+        padding-top: 2rem;
         margin: 0;
     }
-.carousel-details a img{
-    width: 80vw;
-    margin: 0;
-}
+
+    .carousel-details a img {
+        width: 80vw;
+        margin: 0;
+    }
+
     .featured-in h1 {
         font-size: 30px;
     }
