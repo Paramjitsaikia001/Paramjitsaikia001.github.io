@@ -17,6 +17,7 @@ import ioT from '../images/DevelopmentImage/ioT.jpg'
 import bigdata from '../images/DevelopmentImage/bigdata_development.jpg'
 import TypingEffect from 'react-typing-effect'
 import Header from './Header'
+import MobileNav from './mobilenav'
 import { useNavigate } from 'react-router-dom'
 export default function Development() {
     const navigate = useNavigate();
@@ -28,7 +29,7 @@ export default function Development() {
         backnav('/');
     }
     return (
-        <section className="flex flex-col w-[80%] h-[100%] gap-4">
+        <section className="flex flex-col md:w-[98%] w-[100%] h-[100%] gap-4">
             <div className='flex justify-center'>
                 <button
                     onClick={() => backbutton()}
@@ -56,7 +57,7 @@ export default function Development() {
                     </div>
                     <div className='development-container flex flex-wrap gap-5 py-4 border-t-2'>
 
-                        <div className="AIML flex flex-col gap-2 w-[30%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="AIML flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={AIML} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
@@ -67,7 +68,7 @@ export default function Development() {
                             </div>
                         </div>
 
-                        <div className="webdev flex flex-col gap-2 w-[30%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="webdev flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] border-0 rounded-lg' src={webdevelopment} ></img>
 
                             <div className='webdev flex flex-col gap-2 items-center justify-between px-2'>
@@ -76,7 +77,7 @@ export default function Development() {
                                 <button onClick={() => routerhander('webdev')} className='mt-5 border-transparent bg-purple-700 rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
-                        <div className="frontend flex flex-col gap-2 w-[30%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="frontend flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] border-0 rounded-lg' src={frontenddev} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-between px-2'>
@@ -86,7 +87,7 @@ export default function Development() {
                             </div>
                         </div>
 
-                        <div className="backend flex flex-col gap-2 w-[30%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="backend flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] border-0 rounded-lg' src={backend} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-between px-2'>
@@ -97,7 +98,7 @@ export default function Development() {
                         </div>
 
 
-                        <div className="appdev flex flex-col gap-2 w-[30%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="appdev flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={appdevelopment} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-center px-2'>
@@ -107,7 +108,7 @@ export default function Development() {
                             </div>
                         </div>
 
-                        <div className="ios flex flex-col gap-2 w-[30%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="ios flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={IOS} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-center px-2'>
@@ -118,7 +119,7 @@ export default function Development() {
                         </div>
 
 
-                        <div className="android flex flex-col gap-2 w-[30%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="android flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={androidapp} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-center px-2'>
@@ -129,7 +130,7 @@ export default function Development() {
                             </div>
                         </div>
 
-                        <div className="gamedev flex flex-col gap-2 w-[30%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="gamedev flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={gamedevelopment} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
@@ -138,7 +139,7 @@ export default function Development() {
                                 <button className=' border-transparent bg-purple-700  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
-                        <div className="cybersecurity flex flex-col gap-2 w-[30%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="cybersecurity flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={cybersecurity} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
@@ -150,7 +151,7 @@ export default function Development() {
 
 
 
-                        <div className="blockchain flex flex-col gap-2 w-[30%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="blockchain flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={Blockchain} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
@@ -160,7 +161,7 @@ export default function Development() {
                             </div>
                         </div>
 
-                        <div className="devopscloud flex flex-col gap-2 w-[30%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="devopscloud flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={DevOPSCloud} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
@@ -171,7 +172,7 @@ export default function Development() {
                             </div>
                         </div>
 
-                        <div className="datasciene flex flex-col gap-2 w-[30%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="datasciene flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={datascience} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
@@ -181,7 +182,7 @@ export default function Development() {
                             </div>
                         </div>
 
-                        <div className="VR flex flex-col gap-2 w-[30%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="VR flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={VR} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
@@ -191,7 +192,7 @@ export default function Development() {
                             </div>
                         </div>
 
-                        <div className="AR flex flex-col gap-2 w-[30%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="AR flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={AR} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
@@ -202,7 +203,7 @@ export default function Development() {
                             </div>
                         </div>
 
-                        <div className="ioT flex flex-col gap-2 w-[30%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="ioT flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={ioT} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
@@ -213,7 +214,7 @@ export default function Development() {
                             </div>
                         </div>
 
-                        <div className="bigdata flex flex-col gap-2 w-[30%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="bigdata flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={bigdata} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
@@ -228,6 +229,7 @@ export default function Development() {
                 </div>
             </main>
             <Footer />
+            <MobileNav/>
         </section>
     )
 }
