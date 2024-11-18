@@ -15,13 +15,13 @@ function App() {
       <main className='flex p-0 m-0 bg-gray-800 font-[Raleway]'>
         <Main_left />
         <Routes>
-          <Route path='/' element={<Main_right/>}/>
-          <Route path="/development" element={<Development />} />
-          <Route path="/language" element={<Language />} />
-          <Route path="/explore" element={<Explore />} />
-          <Route path="/About-us" element={<Contact />} />
+          <Route path='/traintoexcellency/Frontend-build/' element={<Main_right/>}/>
+          <Route path="/traintoexcellency/Frontend-build/development" element={<Development />} />
+          <Route path="/traintoexcellency/Frontend-build/language" element={<Language />} />
+          <Route path="/traintoexcellency/Frontend-build/explore" element={<Explore />} />
+          <Route path="/traintoexcellency/Frontend-build/About-us" element={<Contact />} />
 
-          <Route path="/development/webdev" element={<Webdev/>} />
+          <Route path="/traintoexcellency/Frontend-build/development/webdev" element={<Webdev/>} />
         </Routes>
       </main>
     </Router>

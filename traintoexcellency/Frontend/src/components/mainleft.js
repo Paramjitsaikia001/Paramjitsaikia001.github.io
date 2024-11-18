@@ -10,31 +10,31 @@ export default function Mainleft() {
                 <Logo/>
                 <nav className='hidden md:block'>
                     <ul className="flex flex-col gap-6 justify-start w-[10rem] text-xl">
-                        <Link to="/" >
+                        <Link to="/traintoexcellency/Frontend-build/" >
                             <li className={`text-white ${location.pathname === '/' ? 'text-[#00ffea]' : ''} lg:list-none lg:gap-1 flex items-center lg:flex-row flex-col text-gray-300 hover:text-gray-100 hover:font-bold`}>
                                 <span className="material-symbols-outlined">home</span>
                                 <span>Home</span>
                             </li>
                         </Link>
-                        <Link to="/development" >
+                        <Link to="/traintoexcellency/Frontend-build/development" >
                             <li className={`text-white ${location.pathname === '/development' ? 'text-[#00ffea]' : ''} lg:list-none lg:gap-1 flex items-center lg:flex-row flex-col text-gray-300 hover:text-gray-100 hover:font-bold`}>
                                 <span className="material-symbols-outlined">developer_board</span>
                                 <div>Development</div>
                             </li>
                         </Link>
-                        <Link to="/language" >
+                        <Link to="/traintoexcellency/Frontend-build/language" >
                         <li className={`text-white ${location.pathname === '/language' ? 'text-[#00ffea]' : ''} lg:list-none lg:gap-1 flex items-center lg:flex-row flex-col text-gray-300 hover:text-gray-100 hover:font-bold`}>
                                 <span className="material-symbols-outlined">code_blocks</span>
                                 <span>Language</span>
                             </li>
                         </Link>
-                        <Link to="/explore" >
+                        <Link to="/traintoexcellency/Frontend-build/explore" >
                         <li className={`text-white ${location.pathname === '/explore' ? 'text-[#00ffea]' : ''} lg:list-none lg:gap-1 flex items-center lg:flex-row flex-col text-gray-300 hover:text-gray-100 hover:font-bold`}>
                                 <span className="material-symbols-outlined">search</span>
                                 <span>Explore</span>
                             </li>
                         </Link>
-                        <Link to="/About-us" >
+                        <Link to="/traintoexcellency/Frontend-build/About-us" >
                         <li className={`text-white ${location.pathname === '/About-us' ? 'text-[#00ffea]' : ''} lg:list-none lg:gap-1 flex items-center lg:flex-row flex-col text-gray-300 hover:text-gray-100 hover:font-bold`}>
                                 <span className="material-symbols-outlined">info</span>
                                 <span>About us</span>

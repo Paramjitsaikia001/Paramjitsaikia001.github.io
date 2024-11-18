@@ -19,7 +19,7 @@ import Footer from './Footer'
 export default function Language() {
     const navigate = useNavigate();
     const backbutton = () => {
-        navigate('/');
+        navigate('/traintoexcellency/Frontend-build/');
     }
     return (
         <section className="flex flex-col md:w-[98%] w-[100%] h-[100%] gap-4">
