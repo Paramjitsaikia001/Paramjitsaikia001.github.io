@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/traintoexcellency/Frontend-build/static/css/main.398fa1b2.css",
-    "main.js": "/traintoexcellency/Frontend-build/static/js/main.c05c2430.js",
+    "main.css": "/traintoexcellency/Frontend-build/static/css/main.aa5f5b31.css",
+    "main.js": "/traintoexcellency/Frontend-build/static/js/main.435f167b.js",
     "static/js/453.dcf8e1c5.chunk.js": "/traintoexcellency/Frontend-build/static/js/453.dcf8e1c5.chunk.js",
     "static/media/gamedevelopment.jpg": "/traintoexcellency/Frontend-build/static/media/gamedevelopment.2a8b6ca9657e5f8f27dc.jpg",
     "static/media/flutter.png": "/traintoexcellency/Frontend-build/static/media/flutter.b9731233c7bbd559ea6d.png",
@@ -33,12 +33,12 @@
     "static/media/AIML.jpg": "/traintoexcellency/Frontend-build/static/media/AIML.acbcfb7eafca18ea93cd.jpg",
     "static/media/SQL.jpg": "/traintoexcellency/Frontend-build/static/media/SQL.2b59af9c8d28f03bb915.jpg",
     "index.html": "/traintoexcellency/Frontend-build/index.html",
-    "main.398fa1b2.css.map": "/traintoexcellency/Frontend-build/static/css/main.398fa1b2.css.map",
-    "main.c05c2430.js.map": "/traintoexcellency/Frontend-build/static/js/main.c05c2430.js.map",
+    "main.aa5f5b31.css.map": "/traintoexcellency/Frontend-build/static/css/main.aa5f5b31.css.map",
+    "main.435f167b.js.map": "/traintoexcellency/Frontend-build/static/js/main.435f167b.js.map",
     "453.dcf8e1c5.chunk.js.map": "/traintoexcellency/Frontend-build/static/js/453.dcf8e1c5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.398fa1b2.css",
-    "static/js/main.c05c2430.js"
+    "static/css/main.aa5f5b31.css",
+    "static/js/main.435f167b.js"
   ]
 }
