@@ -23,7 +23,7 @@ export default function Development() {
     const navigate = useNavigate();
     const backnav = useNavigate();
     const routerhander = (name) => {
-        navigate(`/development/${name}`);
+        navigate(`/traintoexcellency/Frontend-build/development/${name}`);
     }
     const backbutton = () => {
         backnav('/traintoexcellency/Frontend-build/');
@@ -57,171 +57,171 @@ export default function Development() {
                     </div>
                     <div className='development-container flex flex-wrap gap-5 py-4 border-t-2'>
 
-                        <div className="AIML flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="AIML flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={AIML} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'> AI and Machine Learning Development</h3>
                                 <p className='text-sm italic mb-4'>AI (Artificial Intelligence) and ML (Machine Learning) involve creating systems that perform tasks requiring human intelligence, like learning and problem-solving. These technologies develop algorithms for computers to learn from data.
                                 </p>
-                                <button className='mt-3 border-transparent bg-purple-700  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button className='mt-3 border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
 
-                        <div className="webdev flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="webdev flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] border-0 rounded-lg' src={webdevelopment} ></img>
 
                             <div className='webdev flex flex-col gap-2 items-center justify-between px-2'>
                                 <h3 className='font-bold'>Full Stack Web Development</h3>
                                 <p className='text-sm italic'>Web Development includes front-end (client-side) and back-end (server-side) work, creating functional websites. The future is bright with AI advancements and high demand for responsive, user-friendly designs.</p>
-                                <button onClick={() => routerhander('webdev')} className='mt-5 border-transparent bg-purple-700 rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button onClick={() => routerhander('webdev')} className='mt-5 border-transparent bg-[#3D5A80] rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
-                        <div className="frontend flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="frontend flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] border-0 rounded-lg' src={frontenddev} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-between px-2'>
                                 <h3 className='font-bold'>frontend Web Development</h3>
                                 <p className='text-sm italic'>Frontend development involves building the user-facing part of web applications using technologies like HTML, CSS, and JavaScript. It focuses on creating responsive, interactive, and visually appealing interfaces that enhance the user experience.</p>
-                                <button className=' border-transparent bg-purple-700 rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button className=' border-transparent bg-[#3D5A80] rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
 
-                        <div className="backend flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="backend flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] border-0 rounded-lg' src={backend} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-between px-2'>
                                 <h3 className='font-bold'>Backend Web Development</h3>
                                 <p className='text-sm italic'>Backend development involves creating and maintaining the server-side logic, databases, and APIs that power web applications. It focuses on ensuring the application's functionality, security, and performance behind the scenes.</p>
-                                <button className=' border-transparent bg-purple-700 rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button className=' border-transparent bg-[#3D5A80] rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
 
 
-                        <div className="appdev flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="appdev flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={appdevelopment} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-center px-2'>
                                 <h3 className='font-bold'> App Development</h3>
                                 <p className='text-sm italic'>App Development involves creating applications for mobile and desktop platforms. It covers both front-end (user interface) and back-end (server-side) development.</p>
-                                <button className=' border-transparent bg-purple-700  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button className=' border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
 
-                        <div className="ios flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="ios flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={IOS} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-center px-2'>
                                 <h3 className='font-bold'>IOS App Development</h3>
                                 <p className='text-sm italic'>iOS app development involves creating applications for Apple's iOS platform using languages like Swift or Objective-C. It focuses on delivering seamless, high-quality experiences for iPhone and iPad users.</p>
-                                <button className=' border-transparent bg-purple-700  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button className=' border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
 
 
-                        <div className="android flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="android flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={androidapp} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-center px-2'>
                                 <h3 className='font-bold'>Android App Development</h3>
                                 <p className='text-sm italic'>Android app development involves creating applications for devices running on the Android operating system using languages like Java or Kotlin. It focuses on delivering robust, user-friendly experiences for a wide range of Android smartphones and tablets.
                                 </p>
-                                <button className=' border-transparent bg-purple-700  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button className=' border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
 
-                        <div className="gamedev flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="gamedev flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={gamedevelopment} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'> Game Development</h3>
                                 <p className='text-sm italic'>Game Development involves creating interactive games, blending art, storytelling, and coding. It's a dynamic field with growing opportunities thanks to advances in VR and AR technologies.</p>
-                                <button className=' border-transparent bg-purple-700  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button className=' border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
-                        <div className="cybersecurity flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="cybersecurity flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={cybersecurity} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'>CyberSecurity</h3>
                                 <p className='text-sm italic'>Cybersecurity involves protecting computer systems, networks, and data from digital attacks and unauthorized access. It focuses on implementing security measures and mitigating threats to ensure information integrity and confidentiality.</p>
-                                <button className=' border-transparent bg-purple-700  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button className=' border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
 
 
 
-                        <div className="blockchain flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="blockchain flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={Blockchain} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'>Blockchain Development</h3>
                                 <p className='text-sm italic'>Blockchain is a decentralized, digital ledger technology that records transactions across multiple computers. It ensures transparency, security, and immutability, making it ideal for applications like cryptocurrencies, smart contracts, and supply chain management.</p>
-                                <button className=' border-transparent bg-purple-700  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button className=' border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
 
-                        <div className="devopscloud flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="devopscloud flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={DevOPSCloud} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'>Cloud Computing and DevOps</h3>
                                 <p className='text-sm italic'>Cloud Computing delivers scalable computing services like servers, storage, and software over the internet. DevOps combines software development and IT operations to enhance collaboration and automation, ensuring continuous delivery.
                                 </p>
-                                <button className=' border-transparent bg-purple-700  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button className=' border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
 
-                        <div className="datasciene flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="datasciene flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={datascience} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'>Data science</h3>
                                 <p className='text-sm italic'>Data science involves extracting meaningful insights from large and complex datasets using statistical methods, programming, and domain knowledge. It focuses on discovering patterns and making predictions through data analysis and machine learning techniques.</p>
-                                <button className=' border-transparent bg-purple-700  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button className=' border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
 
-                        <div className="VR flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="VR flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={VR} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'>Virtual Reality (VR)</h3>
                                 <p className='text-sm italic'>Virtual Reality (VR) creates immersive, simulated environments that users can interact with in a seemingly real way. It leverages advanced technology to provide experiences in gaming, education, and more through specialized headsets and sensors.</p>
-                                <button className=' border-transparent bg-purple-700  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button className=' border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
 
-                        <div className="AR flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="AR flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={AR} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'>Augmented Reality (AR)</h3>
                                 <p className='text-sm italic'>Augmented Reality (AR) overlays digital content onto the real world, enhancing users' perception of their environment. It uses smartphones and AR glasses to provide interactive and immersive experiences in various applications.
                                 </p>
-                                <button className=' border-transparent bg-purple-700  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button className=' border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
 
-                        <div className="ioT flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="ioT flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={ioT} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'>Internet of Things (IoT) Development</h3>
                                 <p className='text-sm italic'>IoT development involves creating and integrating connected devices that communicate over the internet. It requires knowledge in hardware, software, and networking to build smart solutions for homes, cities, healthcare, and industries.
                                 </p>
-                                <button className=' border-transparent bg-purple-700  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button className=' border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
 
-                        <div className="bigdata flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                        <div className="bigdata flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-36 border-0 rounded-lg' src={bigdata} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'>Big Data Development</h3>
                                 <p className='text-sm italic'>Big Data Development involves designing and building systems to process and analyze large volumes of data. It focuses on utilizing tools and technologies to handle data storage, processing, and analytics for businesses to derive insights.
                                 </p>
-                                <button className=' border-transparent bg-purple-700  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button className=' border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
 

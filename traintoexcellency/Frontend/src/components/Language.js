@@ -48,7 +48,7 @@ export default function Language() {
                     </div>
                 </div>
                 <div className='language-container flex flex-wrap gap-6 py-4 border-t-2'>
-                    <div className="c_language flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                    <div className="c_language flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                         <img className='w-[96%] border-0 rounded-lg' src={c_language} ></img>
 
                         <div className='flex flex-col gap-2 items-center justify-between px-2'>
@@ -57,7 +57,7 @@ export default function Language() {
                             <button className=' border-transparent bg-purple-700 rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                         </div>
                     </div>
-                    <div className=" cplusplus flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                    <div className=" cplusplus flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                         <img className='w-[96%] border-0 rounded-lg h-36' src={cplusplus} ></img>
 
                         <div className='flex flex-col gap-2 items-center justify-between px-2'>
@@ -66,7 +66,7 @@ export default function Language() {
                             <button className=' border-transparent bg-purple-700 rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                         </div>
                     </div>
-                    <div className="python flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                    <div className="python flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                         <img className='w-[96%] border-0 rounded-lg h-36' src={python} ></img>
 
                         <div className='flex flex-col gap-2 items-center justify-between px-2'>
@@ -75,7 +75,7 @@ export default function Language() {
                             <button className=' border-transparent bg-purple-700 rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                         </div>
                     </div>
-                    <div className="c_sharp flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                    <div className="c_sharp flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                         <img className='w-[96%] border-0 rounded-lg h-36' src={c_sharp} ></img>
 
                         <div className='flex flex-col gap-2 items-center justify-between px-2'>
@@ -85,7 +85,7 @@ export default function Language() {
                             <button className=' border-transparent bg-purple-700 rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                         </div>
                     </div>
-                    <div className="rust flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                    <div className="rust flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                         <img className='w-[96%] border-0 rounded-lg h-36' src={rust} ></img>
 
                         <div className='flex flex-col gap-2 items-center justify-between px-2'>
@@ -95,7 +95,7 @@ export default function Language() {
                             <button className=' border-transparent bg-purple-700 rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                         </div>
                     </div>
-                    <div className="java flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                    <div className="java flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                         <img className='w-[96%] border-0 rounded-lg h-36' src={java} ></img>
 
                         <div className='flex flex-col gap-2 items-center justify-between px-2'>
@@ -105,7 +105,7 @@ export default function Language() {
                             <button className=' border-transparent bg-purple-700 rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                         </div>
                     </div>
-                    <div className="SQL flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                    <div className="SQL flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                         <img className='w-[96%] border-0 rounded-lg h-36' src={SQL} ></img>
 
                         <div className='flex flex-col gap-2 items-center justify-between px-2'>
@@ -114,7 +114,7 @@ export default function Language() {
                             <button className=' border-transparent bg-purple-700 rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                         </div>
                     </div>
-                    <div className="javascript flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                    <div className="javascript flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                         <img className='w-[96%] border-0 rounded-lg h-36' src={Javasript} ></img>
 
                         <div className='flex flex-col gap-2 items-center justify-between px-2'>
@@ -123,7 +123,7 @@ export default function Language() {
                             <button className=' border-transparent bg-purple-700 rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                         </div>
                     </div>
-                    <div className="typescript flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                    <div className="typescript flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                         <img className='w-[96%] border-0 rounded-lg h-36' src={typesript} ></img>
 
                         <div className='flex flex-col gap-2 items-center justify-between px-2'>
@@ -132,7 +132,7 @@ export default function Language() {
                             <button className=' border-transparent bg-purple-700 rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                         </div>
                     </div>
-                    <div className="Solidity flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                    <div className="Solidity flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                         <img className='w-[96%] border-0 rounded-lg h-36' src={solidity} ></img>
 
                         <div className='flex flex-col gap-2 items-center justify-between px-2'>
@@ -141,7 +141,7 @@ export default function Language() {
                             <button className=' border-transparent bg-purple-700 rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                         </div>
                     </div>
-                    <div className="go flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                    <div className="go flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                         <img className='w-[96%] border-0 rounded-lg h-36' src={Go} ></img>
 
                         <div className='flex flex-col gap-2 items-center justify-between px-2'>
@@ -151,7 +151,7 @@ export default function Language() {
                             <button className=' border-transparent bg-purple-700 rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                         </div>
                     </div>
-                    <div className="php flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                    <div className="php flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                         <img className='w-[96%] border-0 rounded-lg h-36' src={php} ></img>
 
                         <div className='flex flex-col gap-2 items-center justify-between px-2'>
@@ -161,7 +161,7 @@ export default function Language() {
                             <button className=' border-transparent bg-purple-700 rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                         </div>
                     </div>
-                    <div className="flutter flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-gray-500 items-center py-2 border-0 rounded-lg">
+                    <div className="flutter flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                         <img className='w-[96%] border-0 rounded-lg h-36' src={Flutter} ></img>
 
                         <div className='flex flex-col gap-2 items-center justify-between px-2'>

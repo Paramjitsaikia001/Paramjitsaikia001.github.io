@@ -7,7 +7,8 @@ import Development from './components/Development';
 import Language from './components/Language';
 import Explore from './components/explore';
 import Contact from './components/Contact';
-import Webdev from './components/DevelopmentRoutes/webdevelopment';
+import Webdev from './components/DevelopmentRoutes/webdevelopmentRoutes/webdevelopment';
+import CodeEditor from './components/DevelopmentRoutes/webdevelopmentRoutes/codeEditor';
 function App() {
 
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/traintoexcellency/Frontend-build/About-us" element={<Contact />} />
 
           <Route path="/traintoexcellency/Frontend-build/development/webdev" element={<Webdev/>} />
+          <Route path="/traintoexcellency/Frontend-build/development/webdev/codeeditor" element={<CodeEditor/>} />
         </Routes>
       </main>
     </Router>
