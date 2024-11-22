@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Doto:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+position: relative;
+  height: 100vh;
+  background-color: #181C14;
+  font-family: "Sour Gummy", sans-serif;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.time-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+}
+
+.navber {
+  padding: 2rem;
+  font-size: 1rem;
+}
+
+.navber>ul {
+  display: flex;
+  flex-direction: colum;
+  justify-content: space-between;
+}
+
+li {
+  list-style: none;
+
+}
+#settingBTN{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 3px;
+  border-radius: 5px;
+
+}
+#settingBTN:hover{
+background-color: #373a36;
+}
+
+.time {
+  font-size: 4rem;
+  width: 98vw;
+  height: 60vh;
+  /* font-family: "Doto", sans-serif; */
+  font-family: "Anton", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time>.hours,
+.minutes,
+.second {
+  background-color: #373a36;
+  border: 2px solid #191a19;
+  border-radius: 1rem;
+  width: 30%;
+  height: 90%;
+  object-fit: fill;
+  align-items: center;
+  justify-content: center;
+  font-size: 40vmin;
+  display: flex;
+}
+
+.dot {
+  background-color: transparent;
+  border: none;
+  font-size: 10rem;
+}
+
+.date{
+  width: auto;
+  height: 4rem;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  gap: 0.3rem;
+}
+.hidden{
+  visibility: hidden;
+}
+
+.today{
+  width: auto;
+  height: 2rem;
+
+}
+#settingNAV{
+  position: fixed;
+  right: 2%;
+  left: 80%;
+  width: auto;
+  padding: 2rem;
+  height: auto;
+  background-color: #050505;
+  color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  align-content: flex-start;
+}
+#settingNAV>li{
+  cursor: pointer;
+  padding: 2px 5px;
+  border-radius: 5px;
+  width: 100%;
+}
+#settingNAV>li:hover{
+  background: #383636;
+}

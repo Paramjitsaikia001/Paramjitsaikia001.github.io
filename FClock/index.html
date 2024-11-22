@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>FClock</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=settings" />
+</head>
+
+<body>
+  <nav class="navber">
+    <ul>
+      <li>FClock</li>
+      <li id="settingBTN">
+        <span class="material-symbols-outlined">
+          settings
+        </span>
+      </li>
+    </ul>
+    <ul class=" hidden" id="settingNAV">
+      <li>Hour</li>
+      <li>Themes</li>
+      <li>Set Study time</li>
+    </ul>
+  </nav>
+  <main class="time-container">
+    <div class="today">
+      <div id="today"></div>
+    </div>
+    <div id="time" class="time">
+      <div class="hours" id="hours">
+        --
+      </div>
+      <div class="dot">
+        :
+      </div>
+      <div class="minutes" id="minutes">
+        --
+      </div >
+      <div class="dot">
+        :
+      </div>
+      <div class="second" id="second">
+        --
+      </div>
+    </div>
+    <div id="date" class="date">
+      <div id="day"></div>
+      <div id="month"></div>
+      <div id="year"></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
