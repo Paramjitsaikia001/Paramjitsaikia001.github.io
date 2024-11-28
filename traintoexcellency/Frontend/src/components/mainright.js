@@ -5,14 +5,18 @@ import gamedevelopment from '../images/DevelopmentImage/gamedevelopment.jpg'
 import c_language from '../images/LanguageImage/c-programming-1.png'
 import cplusplus from '../images/LanguageImage/c-plus-plus-programming-language.jpg'
 import python from '../images/LanguageImage/python-language.jpg'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import TypingEffect from 'react-typing-effect';
 import Header from './Header'
 import MobileNav from './mobilenav'
 export default function Mainright() {
+    const nagivate= useNavigate();
+    const routehander=(name)=>{
+        nagivate(`/traintoexcellency/Frontend-build/development/${name}`);
+    }
     
     return (
-        <section className="flex flex-col md:w-[98%] w-[100%] h-[100%] gap-4 ">
+        <section className="flex flex-col md:w-[90%] w-[100%] h-[100%] gap-4 ">
            <Header/>
             <main className="flex flex-col gap-12 p-4 ">
                 <div className="mainline">
@@ -33,12 +37,14 @@ export default function Mainright() {
                         </div>
                         <div className='development-container flex flex-wrap gap-5 py-4 items-center justify-center'>
                             <div className=" flex flex-col gap-2 w-[98%] md:w-[31%]  min-h-48 bg-[#acc2ef] items-center justify-between py-2 border-0 rounded-lg">
-                                <img className='w-[96%] border-0 rounded-lg' src={webdevelopment} ></img>
+                                <img className='w-[96%] h-36 border-0 rounded-lg' src={webdevelopment} ></img>
 
                                 <div className='flex flex-col gap-2 items-center justify-between px-2'>
                                     <h3 className='font-bold'>Full Stack Web Development</h3>
                                     <p className='text-sm italic'>Web Development includes front-end (client-side) and back-end (server-side) work, creating functional websites. The future is bright with AI advancements and high demand for responsive, user-friendly designs.</p>
-                                    <button className=' border-transparent bg-[#3D5A80] text-[#e0e0e0] flex  rounded-full py-1 px-3 items-center hover:font-bold hover:bg-[#84aee6] hover:text-black '> Show Track</button>
+                                    <button
+                                    onClick={() => routehander("webdev")} 
+                                     className=' border-transparent bg-[#3D5A80] text-[#e0e0e0] flex  rounded-full py-1 px-3 items-center hover:font-bold hover:bg-[#84aee6] hover:text-black '> Show Track</button>
                                 </div>
                             </div>
                             <div className=" flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">

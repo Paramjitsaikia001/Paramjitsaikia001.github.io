@@ -29,7 +29,7 @@ export default function Development() {
         backnav('/traintoexcellency/Frontend-build/');
     }
     return (
-        <section className="flex flex-col md:w-[98%] w-[100%] h-[100%] gap-4">
+        <section className="flex flex-col md:w-[90%] w-[100%] h-[100%] gap-4">
             <div className='flex justify-center'>
                 <button
                     onClick={() => backbutton()}
@@ -58,13 +58,17 @@ export default function Development() {
                     <div className='development-container flex flex-wrap gap-5 py-4 border-t-2'>
 
                         <div className="AIML flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
-                            <img className='w-[96%] h-36 border-0 rounded-lg' src={AIML} ></img>
+                            <img className='w-[96%] h-auto border-0 rounded-lg' 
+                            src={AIML} 
+                            alt='aiml img'></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'> AI and Machine Learning Development</h3>
                                 <p className='text-sm italic mb-4'>AI (Artificial Intelligence) and ML (Machine Learning) involve creating systems that perform tasks requiring human intelligence, like learning and problem-solving. These technologies develop algorithms for computers to learn from data.
                                 </p>
-                                <button className='mt-3 border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button
+                                onClick={() => routerhander('AIML')}
+                                className='mt-3 border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
 
@@ -74,7 +78,9 @@ export default function Development() {
                             <div className='webdev flex flex-col gap-2 items-center justify-between px-2'>
                                 <h3 className='font-bold'>Full Stack Web Development</h3>
                                 <p className='text-sm italic'>Web Development includes front-end (client-side) and back-end (server-side) work, creating functional websites. The future is bright with AI advancements and high demand for responsive, user-friendly designs.</p>
-                                <button onClick={() => routerhander('webdev')} className='mt-5 border-transparent bg-[#3D5A80] rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button 
+                                onClick={() => routerhander('webdev')} 
+                                className='mt-5 border-transparent bg-[#3D5A80] rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
                         <div className="frontend flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
@@ -99,17 +105,19 @@ export default function Development() {
 
 
                         <div className="appdev flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
-                            <img className='w-[96%] h-36 border-0 rounded-lg' src={appdevelopment} ></img>
+                            <img className='w-[96%]  border-0 rounded-lg' src={appdevelopment} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-center px-2'>
                                 <h3 className='font-bold'> App Development</h3>
                                 <p className='text-sm italic'>App Development involves creating applications for mobile and desktop platforms. It covers both front-end (user interface) and back-end (server-side) development.</p>
-                                <button className=' border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button
+                                onClick={() => routerhander('appdev')}
+                                className=' border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
 
                         <div className="ios flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
-                            <img className='w-[96%] h-36 border-0 rounded-lg' src={IOS} ></img>
+                            <img className='w-[96%]  border-0 rounded-lg' src={IOS} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-center px-2'>
                                 <h3 className='font-bold'>IOS App Development</h3>
@@ -120,7 +128,7 @@ export default function Development() {
 
 
                         <div className="android flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
-                            <img className='w-[96%] h-36 border-0 rounded-lg' src={androidapp} ></img>
+                            <img className='w-[96%]  border-0 rounded-lg' src={androidapp} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-center px-2'>
                                 <h3 className='font-bold'>Android App Development</h3>
@@ -131,16 +139,18 @@ export default function Development() {
                         </div>
 
                         <div className="gamedev flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
-                            <img className='w-[96%] h-36 border-0 rounded-lg' src={gamedevelopment} ></img>
+                            <img className='w-[96%]  border-0 rounded-lg' src={gamedevelopment} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'> Game Development</h3>
                                 <p className='text-sm italic'>Game Development involves creating interactive games, blending art, storytelling, and coding. It's a dynamic field with growing opportunities thanks to advances in VR and AR technologies.</p>
-                                <button className=' border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
+                                <button
+                                onClick={() => routerhander('gamedev')}
+                                 className=' border-transparent bg-[#3D5A80]  rounded-full py-1 px-3 hover:font-bold'> Show Track</button>
                             </div>
                         </div>
                         <div className="cybersecurity flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
-                            <img className='w-[96%] h-36 border-0 rounded-lg' src={cybersecurity} ></img>
+                            <img className='w-[96%]  border-0 rounded-lg' src={cybersecurity} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'>CyberSecurity</h3>
@@ -152,7 +162,7 @@ export default function Development() {
 
 
                         <div className="blockchain flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
-                            <img className='w-[96%] h-36 border-0 rounded-lg' src={Blockchain} ></img>
+                            <img className='w-[96%]  border-0 rounded-lg' src={Blockchain} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'>Blockchain Development</h3>
@@ -162,7 +172,7 @@ export default function Development() {
                         </div>
 
                         <div className="devopscloud flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
-                            <img className='w-[96%] h-36 border-0 rounded-lg' src={DevOPSCloud} ></img>
+                            <img className='w-[96%]  border-0 rounded-lg' src={DevOPSCloud} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'>Cloud Computing and DevOps</h3>
@@ -173,7 +183,7 @@ export default function Development() {
                         </div>
 
                         <div className="datasciene flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
-                            <img className='w-[96%] h-36 border-0 rounded-lg' src={datascience} ></img>
+                            <img className='w-[96%]  border-0 rounded-lg' src={datascience} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'>Data science</h3>
@@ -183,7 +193,7 @@ export default function Development() {
                         </div>
 
                         <div className="VR flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
-                            <img className='w-[96%] h-36 border-0 rounded-lg' src={VR} ></img>
+                            <img className='w-[96%]  border-0 rounded-lg' src={VR} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'>Virtual Reality (VR)</h3>
@@ -193,7 +203,7 @@ export default function Development() {
                         </div>
 
                         <div className="AR flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
-                            <img className='w-[96%] h-36 border-0 rounded-lg' src={AR} ></img>
+                            <img className='w-[96%]  border-0 rounded-lg' src={AR} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'>Augmented Reality (AR)</h3>
@@ -204,7 +214,7 @@ export default function Development() {
                         </div>
 
                         <div className="ioT flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
-                            <img className='w-[96%] h-36 border-0 rounded-lg' src={ioT} ></img>
+                            <img className='w-[96%]  border-0 rounded-lg' src={ioT} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'>Internet of Things (IoT) Development</h3>
@@ -215,7 +225,7 @@ export default function Development() {
                         </div>
 
                         <div className="bigdata flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
-                            <img className='w-[96%] h-36 border-0 rounded-lg' src={bigdata} ></img>
+                            <img className='w-[96%]  border-0 rounded-lg' src={bigdata} ></img>
 
                             <div className='flex flex-col gap-2 items-center justify-around px-2'>
                                 <h3 className='font-bold'>Big Data Development</h3>

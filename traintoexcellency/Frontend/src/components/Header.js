@@ -7,7 +7,7 @@ export default function Header() {
         setShowInput(!showInput);
     };
     return (
-        <section className='flex md:justify-between items-center w-[100%]'>
+        <section className='flex md:justify-between items-center md:w-[90%] w-[100%]'>
             <div className='md:hidden block'>
                 <Logo />
             </div>
@@ -15,7 +15,7 @@ export default function Header() {
                 <div className='flex gap-1 justify-center items-center'>
                     {showInput && (
                         <input
-                            className='text-black border-2 border-black py-1 px-3 bg-[#e0e0e05b] rounded-2xl items-center animate-slideLeft'
+                            className='text-black border-none py-1 px-3 bg-[#ffffff] rounded-md items-center animate-slideLeft'
                             type='search'
                             placeholder='search here....'
                         >
