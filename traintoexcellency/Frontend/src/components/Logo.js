@@ -1,6 +1,4 @@
-import { useState } from 'react';
 import appLogo from '../images/appLogo.png';
-import Mainleft from './mainleft';
 
 export default function Logo() {
     return (

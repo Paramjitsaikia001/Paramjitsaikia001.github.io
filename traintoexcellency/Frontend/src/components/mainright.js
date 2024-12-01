@@ -16,7 +16,7 @@ export default function Mainright() {
     }
     
     return (
-        <section className="flex flex-col md:w-[90%] w-[100%] h-[100%] gap-4 ">
+        <section className="flex flex-col lg:w-[90%] w-[100%] h-[100%] gap-4 ">
            <Header/>
             <main className="flex flex-col gap-12 p-4 ">
                 <div className="mainline">

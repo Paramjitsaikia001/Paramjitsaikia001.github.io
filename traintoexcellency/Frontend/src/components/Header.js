@@ -7,7 +7,7 @@ export default function Header() {
         setShowInput(!showInput);
     };
     return (
-        <section className='flex md:justify-between items-center md:w-[90%] w-[100%]'>
+        <section className='flex md:justify-between items-center lg:w-[90%] w-[100%]'>
             <div className='md:hidden block'>
                 <Logo />
             </div>
