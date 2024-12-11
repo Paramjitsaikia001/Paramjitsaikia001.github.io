@@ -102,6 +102,8 @@ document.getElementById("settingNAV").addEventListener("click", (event) => {
   event.stopPropagation(); // Prevent clicks inside settingNAV from closing it
 });
 
+document.getElementById("fullScreenBtn").addEventListener("click", function() { if (!document.fullscreenElement) { document.documentElement.requestFullscreen(); } else { if (document.exitFullscreen) { document.exitFullscreen(); } } });
+
 // Update the time every second
 setInterval(updateTime, 1000);
 updateTime(); // Initialize immediately

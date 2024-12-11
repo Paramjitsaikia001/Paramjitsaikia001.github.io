@@ -13,7 +13,6 @@ position: relative;
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .time-container {
@@ -55,7 +54,6 @@ background-color: #373a36;
 }
 
 .time {
-  font-size: 4rem;
   width: 98vw;
   height: 60vh;
   /* font-family: "Doto", sans-serif; */
@@ -68,7 +66,7 @@ background-color: #373a36;
 .time>.hours,
 .minutes,
 .second {
-  background-color: #373a36;
+  background-color: #191a19;
   border: 2px solid #191a19;
   border-radius: 1rem;
   width: 30%;
@@ -76,7 +74,7 @@ background-color: #373a36;
   object-fit: fill;
   align-items: center;
   justify-content: center;
-  font-size: 40vmin;
+  font-size: 60vmin;
   display: flex;
 }
 
@@ -130,4 +128,8 @@ background-color: #373a36;
 }
 #settingNAV>li:hover{
   background: #383636;
+}
+
+.navright{
+  display: flex;
 }
