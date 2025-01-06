@@ -1,12 +1,37 @@
-
+import { useState } from "react";
 export default function NodeJSpage({ closeNodeJS, Done }) {
     const Nexthandler = () => {
         Done();
         closeNodeJS();
     }
+  const [isFullScreen, setFullScreen] = useState("left-[60%]");
+    const fullscrenHandler = () => {
+        if (isFullScreen === "left-[60%]") {
+            setFullScreen("left-[20%]");
+        } else {
+            setFullScreen("left-[60%]");
+        }
+    }
     return (
-        <section className="fixed right-0 left-[20%] md:left-[60%] top-0 bottom-0 overflow-scroll inset-0 bg-[#0a0e27] flex justify-center items-center z-50 m-0 h-[100%] pt-12">
-            <div className="bg-[#0a0e27] text-white pb-0 px-4  h-[100%]">
+        <section className={`transition-transform duration-300  ease-in-out fixed right-0 ${isFullScreen}  top-0 bottom-0 overflow-y-scroll scrollbar scrollbar-thumb-scrollbarThumb scrollbar-track-scrollbarTrack scrollbar-bg-scrollbarBg inset-0 bg-[#0e1542] flex justify-center items-center z-50 m-0 h-[100%] pt-6`} style={{boxShadow: "0 0 10px 0px #000000"}}>
+            <div className="bg-[#0e1542] text-white pb-0 px-4  h-[100%]">
+                <div className='flex pb-4 justify-between items-center w-[100%]'>
+                    {isFullScreen === "left-[60%]" ? (
+                        <span className="material-symbols-outlined text-[#8f8f8f] cursor-pointer" onClick={fullscrenHandler}>
+                            open_in_full
+                        </span>
+                    ) : (
+                        <span className="material-symbols-outlined text-[#8f8f8f] cursor-pointer" onClick={fullscrenHandler}>
+                            close_fullscreen
+                        </span>
+                    )}
+
+                    <span
+                        onClick={closeNodeJS}
+                        class="material-symbols-outlined text-[#8f8f8f] cursor-pointer">
+                        close
+                    </span>
+                </div>
                 <h2 className="text-2xl mb-4 bg-[#00d9ff] text-black w-[100%] rounded-md p-2"> Node.js</h2>
                 <div className="flex flex-col gap-1">
                     <p><span className="text-[#23daff] font-bold"> Node.js</span> is a powerful, open-source runtime environment that allows developers to execute JavaScript code outside of the browser, typically on a server. Built on Google Chrome's V8 engine, Node.js is known for its speed, scalability, and event-driven architecture. It is widely used for building backend services like APIs, web servers, and real-time applications, making it a cornerstone of modern full-stack development.

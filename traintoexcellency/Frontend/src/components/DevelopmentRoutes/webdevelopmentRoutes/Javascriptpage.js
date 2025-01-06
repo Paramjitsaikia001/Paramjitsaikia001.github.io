@@ -1,12 +1,38 @@
+import { useState } from "react";
 
 export default function Jspage({ closejs, Done }) {
     const Nexthandler = () => {
         Done();
         closejs();
     }
+  const [isFullScreen, setFullScreen] = useState("left-[60%]");
+    const fullscrenHandler = () => {
+        if (isFullScreen === "left-[60%]") {
+            setFullScreen("left-[20%]");
+        } else {
+            setFullScreen("left-[60%]");
+        }
+    }
     return (
-        <section className="fixed right-0 left-[20%] md:left-[60%] top-0 bottom-0 overflow-scroll inset-0 bg-[#0a0e27] flex justify-center items-center z-50 m-0 h-[100%] pt-12">
-            <div className="bg-[#0a0e27] text-white pb-0 px-4  h-[100%]">
+        <section className={`transition-transform duration-300  ease-in-out fixed right-0 ${isFullScreen}  top-0 bottom-0 overflow-y-scroll scrollbar scrollbar-thumb-scrollbarThumb scrollbar-track-scrollbarTrack scrollbar-bg-scrollbarBg inset-0 bg-[#0e1542] flex justify-center items-center z-50 m-0 h-[100%] pt-6`} style={{boxShadow: "0 0 10px 0px #000000"}}>
+            <div className="bg-[#0e1542] text-white pb-0 px-4  h-[100%]">
+                <div className='flex pb-4 justify-between items-center w-[100%]'>
+                    {isFullScreen === "left-[60%]" ? (
+                        <span className="material-symbols-outlined text-[#8f8f8f] cursor-pointer" onClick={fullscrenHandler}>
+                            open_in_full
+                        </span>
+                    ) : (
+                        <span className="material-symbols-outlined text-[#8f8f8f] cursor-pointer" onClick={fullscrenHandler}>
+                            close_fullscreen
+                        </span>
+                    )}
+
+                    <span
+                        onClick={closejs}
+                        class="material-symbols-outlined text-[#8f8f8f] cursor-pointer">
+                        close
+                    </span>
+                </div>
                 <h2 className="text-2xl mb-4 bg-[#00d9ff] text-black w-[100%] rounded-md p-2">JavaScript</h2>
                 <div className="flex flex-col gap-1">
                     <p><span className="text-[#23daff] font-bold">JavaScript</span> is a powerful programming language that adds interactivity, functionality, and dynamic behavior to web pages. While HTML structures the content and CSS styles it, JavaScript enables users to interact with a website through features like form validation, interactive maps, animations, and real-time content updates. It works seamlessly with HTML and CSS to create responsive and engaging web applications.

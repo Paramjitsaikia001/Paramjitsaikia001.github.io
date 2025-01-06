@@ -22,7 +22,7 @@ export default function Language() {
         navigate('/traintoexcellency/Frontend-build/');
     }
     return (
-        <section className="flex flex-col md:w-[98%] w-[100%] h-[100%] gap-4">
+        <section className="flex flex-col lg:w-[80%] w-[100%] h-[100%] gap-4">
             <div className='flex justify-center'>
                 <button
                     onClick={() => backbutton()}

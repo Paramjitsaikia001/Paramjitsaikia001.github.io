@@ -1,3 +1,13 @@
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+// import required modules
+import { Pagination } from 'swiper/modules';
+
+
 import Footer from './Footer'
 import webdevelopment from '../images/DevelopmentImage/Web_development.webp'
 import appdevelopment from '../images/DevelopmentImage/appdevelopment.jpg'
@@ -10,15 +20,17 @@ import TypingEffect from 'react-typing-effect';
 import Header from './Header'
 import MobileNav from './mobilenav'
 export default function Mainright() {
-    const nagivate= useNavigate();
-    const routehander=(name)=>{
+    const nagivate = useNavigate();
+    const routehander = (name) => {
         nagivate(`/traintoexcellency/Frontend-build/development/${name}`);
     }
-    
+
     return (
-        <section className="flex flex-col lg:w-[90%] w-[100%] h-[100%] gap-4 ">
-           <Header/>
-            <main className="flex flex-col gap-12 p-4 ">
+        <section className={` flex flex-col lg:w-[80%] w-[100%]  h-full gap-4 `}>
+            <div className='flex justify-between py-4 px-4'>
+                <Header />
+            </div>
+            <main className="flex flex-col gap-12 p-4 w-[100%]">
                 <div className="mainline">
                     <p className="flex flex-col gap-1">
                         <span className="text-white font-bold text-3xl flex flex-col">
@@ -30,7 +42,38 @@ export default function Mainright() {
                     </p>
 
                 </div>
-                <div className="flex flex-col">
+                <div className="whatisfor w-[100%] items-center flex flex-col gap-4 justify-center  relative h-[50vh] ">
+                    <Swiper
+                        pagination={{
+                            dynamicBullets: true,
+                        }}
+                        modules={[Pagination]}
+                        className="swiper"
+                    >
+                        <SwiperSlide className='swiper-slide flex justify-center items-center'>
+                            <div className="slide1details text-6xl flex justify-center items-center text-[#a0d4ff] font-bold">
+                                <h1>We Features in</h1>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='swiper-slide flex flex-col gap-3 justify-center items-center text-[#a0d4ff]'>
+                            <div className="slide2Header">
+                                <h1 className="text-4xl font-bold">What is for?</h1>
+                            </div>
+                            <div className="slide2details text-xl text-white">
+                            <p class="styleScript italic">Discover Your Passion, Blaze Your Trail, and Build Something Extraordinary!</p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='swiper-slide'>Slide 3</SwiperSlide>
+                        <SwiperSlide className='swiper-slide'>Slide 4</SwiperSlide>
+                        <SwiperSlide className='swiper-slide'>Slide 5</SwiperSlide>
+                        <SwiperSlide className='swiper-slide'>Slide 6</SwiperSlide>
+                        <SwiperSlide className='swiper-slide'>Slide 7</SwiperSlide>
+                        <SwiperSlide className='swiper-slide'>Slide 8</SwiperSlide>
+                        <SwiperSlide className='swiper-slide'>Slide 9</SwiperSlide>
+                    </Swiper>
+                </div>
+
+                <div className="developmentsection flex flex-col w-[100%]">
                     <div className="development flex flex-col">
                         <div className="border-b-2 border-gray-500">
                             <h2 className=' text-2xl font-bold text-[#FFFF]'>Development</h2>
@@ -43,8 +86,8 @@ export default function Mainright() {
                                     <h3 className='font-bold'>Full Stack Web Development</h3>
                                     <p className='text-sm italic'>Web Development includes front-end (client-side) and back-end (server-side) work, creating functional websites. The future is bright with AI advancements and high demand for responsive, user-friendly designs.</p>
                                     <button
-                                    onClick={() => routehander("webdev")} 
-                                     className=' border-transparent bg-[#3D5A80] text-[#e0e0e0] flex  rounded-full py-1 px-3 items-center hover:font-bold hover:bg-[#84aee6] hover:text-black '> Show Track</button>
+                                        onClick={() => routehander("webdev")}
+                                        className=' border-transparent bg-[#3D5A80] text-[#e0e0e0] flex  rounded-full py-1 px-3 items-center hover:font-bold hover:bg-[#84aee6] hover:text-black '> Show Track</button>
                                 </div>
                             </div>
                             <div className=" flex flex-col gap-2 w-[98%] md:w-[31%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
@@ -75,7 +118,7 @@ export default function Mainright() {
                         </div>
                     </div>
                 </div>
-                <div className='flex flex-col'>
+                <div className='programminglanguagesection flex flex-col w-[100%]'>
                     <div className="development flex flex-col">
                         <div className="border-b-2 border-gray-500">
                             <h2 className=' text-2xl font-bold text-[#FFFF]'>Programming-Language</h2>
@@ -112,18 +155,18 @@ export default function Mainright() {
                             </div>
                         </div>
                         <div>
-                        <Link to='/language'>
-                                    <button className="border-transparent bg-[#3D5A80] rounded-full py-2 px-8  hover:border-transparent hover:bg-[#84aee6] w-[100%]">
-                                        Explore more destiny.......
-                                    </button>
-                                </Link>
+                            <Link to='/language'>
+                                <button className="border-transparent bg-[#3D5A80] rounded-full py-2 px-8  hover:border-transparent hover:bg-[#84aee6] w-[100%]">
+                                    Explore more destiny.......
+                                </button>
+                            </Link>
 
                         </div>
                     </div>
                 </div>
             </main>
             <Footer />
-            <MobileNav/>
+            <MobileNav />
         </section >
     )
 }

@@ -1,12 +1,38 @@
-
+import { useState } from 'react';
+import 'tailwindcss/tailwind.css';
 export default function CodeEditor({ closeEditor, Done }) {
     const Nexthandler = () => {
         Done();
         closeEditor();
     }
+    const [isFullScreen, setFullScreen] = useState("left-[60%]");
+    const fullscrenHandler = () => {
+        if (isFullScreen === "left-[60%]") {
+            setFullScreen("left-[20%]");
+        } else {
+            setFullScreen("left-[60%]");
+        }
+    }
     return (
-        <section className="fixed right-0 left-[20%] md:left-[60%] top-0 bottom-0 overflow-scroll inset-0 bg-[#0a0e27] flex justify-center items-center z-50 m-0 h-[100%] pt-12">
-            <div className="bg-[#0a0e27] text-white pb-0 px-4  h-[100%]">
+        <section className={`transition-transform duration-300  ease-in-out fixed right-0 ${isFullScreen}  top-0 bottom-0 overflow-y-scroll scrollbar scrollbar-thumb-scrollbarThumb scrollbar-track-scrollbarTrack scrollbar-bg-scrollbarBg inset-0 bg-[#0e1542] flex justify-center items-center z-50 m-0 h-[100%] pt-6`} style={{boxShadow: "0 0 10px 0px #000000"}}>
+            <div className="bg-[#0e1542] text-white pb-0 px-4  h-[100%]">
+                <div className='flex pb-4 justify-between items-center w-[100%]'>
+                    {isFullScreen === "left-[60%]" ? (
+                        <span className="material-symbols-outlined text-[#8f8f8f] cursor-pointer" onClick={fullscrenHandler}>
+                            open_in_full
+                        </span>
+                    ) : (
+                        <span className="material-symbols-outlined text-[#8f8f8f] cursor-pointer" onClick={fullscrenHandler}>
+                            close_fullscreen
+                        </span>
+                    )}
+
+                    <span
+                        onClick={closeEditor}
+                        class="material-symbols-outlined text-[#8f8f8f] cursor-pointer">
+                        close
+                    </span>
+                </div>
                 <h2 className="text-2xl mb-4 bg-[#00d9ff] text-black w-[100%] rounded-md p-2">Code Editor</h2>
                 <div className="flex flex-col gap-1">
                     <p>A <span className="text-[#23daff] font-bold">Code editor</span> is a software application designed to help developers write, edit, and debug code more efficiently. It provides features like syntax highlighting, auto-completion, and indentation, which make coding faster and easier.
@@ -43,7 +69,7 @@ export default function CodeEditor({ closeEditor, Done }) {
                                 </div>
                             </div>
 
-{/* sublimetext */}
+                            {/* sublimetext */}
                             <div className="SublimeText my-4 flex flex-col gap-2">
                                 <h3 className="font-bold text-lg">Sublime Text:
                                 </h3>
@@ -68,7 +94,7 @@ export default function CodeEditor({ closeEditor, Done }) {
                                 </div>
                             </div>
 
-{/* atom */}
+                            {/* atom */}
                             <div className="Atom my-4 flex flex-col gap-2">
                                 <h3 className="font-bold text-lg">Atom:
                                 </h3>
@@ -85,7 +111,7 @@ export default function CodeEditor({ closeEditor, Done }) {
                                 </div>
                             </div>
 
-{/* webstorm */}
+                            {/* webstorm */}
                             <div className=" WebStorm my-4 flex flex-col gap-2">
                                 <h3 className="font-bold text-lg">WebStorm:
                                 </h3>
@@ -104,8 +130,8 @@ export default function CodeEditor({ closeEditor, Done }) {
                             </div>
                         </div>
                         <div className="flex flex-col">
-                             <h2 className="font-bold text-xl">Online Code Editors:</h2>
-                             <div className="flex flex-col gap-3">
+                            <h2 className="font-bold text-xl">Online Code Editors:</h2>
+                            <div className="flex flex-col gap-3">
                                 <div className="flex gap-2">
                                     <a href="https://codepen.io/" target="_blank" rel="noopener noreferrer">
                                         <h4 className="text-[#28ffd4] text-lg- font-bold">CodePen:</h4>
@@ -127,7 +153,7 @@ export default function CodeEditor({ closeEditor, Done }) {
                                     </p>
                                 </div>
 
-                             </div>
+                            </div>
                         </div>
                     </div>
                 </div>

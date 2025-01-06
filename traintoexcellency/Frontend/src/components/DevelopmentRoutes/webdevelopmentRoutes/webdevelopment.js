@@ -11,6 +11,21 @@ import Expresspage from "./expresspage";
 import DBMSpage from "./DBMS";
 import VersionControlSystems from "./Versioncontrol";
 import FrontendProjectDeploymentpage from "./FrontendProjectDeploy";
+import APIpage from "./APIpage";
+import FullstackDeploymentpage from "./FullstackProjectDeployment";
+import ProjectBuild from "./ProjectBuild";
+import LibraryandFramework from "./LibraryandFramework";
+import ReactPage from "./ReactPage";
+import AngularPage from "./AngularPage";
+import VuePage from "./VuePage";
+import NextForReact from "./NextForReact";
+import NustPage from "./NustPage";
+import AngularUniversalPage from "./AngularUniversalPage";
+import BootstrapPage from "./Bootstrap";
+import Tailwindcss from "./Tailwindcss";
+import MaterialUIPage from "./Material_UI";
+import FullResources from "./FullResources";
+
 
 export default function WebDevelopment() {
     const [showCodeEditor, setCodeEditor] = useState(false);
@@ -23,6 +38,21 @@ export default function WebDevelopment() {
     const [showDBMS, setDBMS] = useState(false);
     const [showVCS, setVCS] = useState(false);
     const [showFrontendProjectDeploy, setFrontendProjectDeploy] = useState(false);
+    const [showAPI, setAPI] = useState(false);
+    const [showfullstackDeployment, setfullstackDeployment] = useState(false);
+    const [showProjectBuild, setProjectBuild] = useState(false);
+    const [showLibraryFramework, setLibraryFramework] = useState(false);
+    const [showReact, setReact] = useState(false);
+    const [showAngular, setAngular] = useState(false);
+    const [showVue, setVue] = useState(false);
+    const [showNextForReact, setNextForReact] = useState(false);
+    const [showNuxt, setNuxt] = useState(false);
+    const [showAngularUniversal, setAngularUniversal] = useState(false);
+    const [showBootstrap, setBootstrap] = useState(false);
+    const [showTailwindcss, setTailwindcss] = useState(false);
+    const [showMaterialUI, setMaterialUI] = useState(false);
+    const[showFullResources,setFullResources]=useState(false);
+    const [isTooltipVisible, setIsTooltipVisible] = useState(false);
 
 
 
@@ -36,6 +66,21 @@ export default function WebDevelopment() {
     const [DBMSColorLine, setDBMSColorLine] = useState("bg-gray-700");
     const [VCSColorLine, setVCSColorLine] = useState("bg-gray-700");
     const [FrontendProjectDeployColorLine, setFrontendProjectDeployColorLine] = useState("bg-gray-700");
+    const [APIColorLine, setAPIColorLine] = useState("bg-gray-700");
+    const [fullstackDeploymentColorLine, setfullstackDeploymentColorLine] = useState("bg-gray-700");
+    const [ProjectBuildColorLine, setProjectBuildColorLine] = useState("bg-gray-700")
+    const [LibraryFrameworkColorLine, setLibraryFrameworkColorLine] = useState("bg-gray-700");
+    const [ReactColorLine, setReactColorLine] = useState("bg-gray-700");
+    const [AngularColorLine, setAngularColorLine] = useState("bg-gray-700");
+    const [VueColorLine, setVueColorLine] = useState("bg-gray-700");
+    const [NextForReactColorLine, setNextForReactColorLine] = useState("bg-gray-700");
+    const [NuxtColorLine, setNuxtColorLine] = useState("bg-gray-700");
+    const [AngularUniversalColorLine, setAngularUniversalColorLine] = useState("bg-gray-700");
+    const [BootstrapColorLine, setBootstrapColorLine] = useState("bg-gray-700");
+    const [TailwindcssColorLine, setTailwindcssColorLine] = useState("bg-gray-700");
+    const [MaterialUIColorLine, setMaterialUIColorLine] = useState("bg-gray-700");
+
+
 
 
     const codeeditorhandler = () => {
@@ -67,6 +112,49 @@ export default function WebDevelopment() {
     }
     const FrontendProjectDeployhandler = () => {
         setFrontendProjectDeploy(!showFrontendProjectDeploy);
+    }
+    const APIhandler = () => {
+        setAPI(!showAPI);
+    }
+
+    const fullstackDeploymenthandler = () => {
+        setfullstackDeployment(!showfullstackDeployment);
+    }
+    const ProjectBuildhandler = () => {
+        setProjectBuild(!showProjectBuild);
+    }
+    const LibraryFrameworkhandler = () => {
+        setLibraryFramework(!showLibraryFramework);
+    }
+    const Reacthandler = () => {
+        setReact(!showReact);
+    }
+    const Angularhandler = () => {
+        setAngular(!showAngular);
+    }
+    const Vuehandler = () => {
+        setVue(!showVue);
+    }
+    const NextForReactHandler = () => {
+        setNextForReact(!showNextForReact);
+    }
+    const NuxtHandler = () => {
+        setNuxt(!showNuxt);
+    }
+    const AngularUniversalHandler = () => {
+        setAngularUniversal(!showAngularUniversal);
+    }
+    const BootstrapHandler = () => {
+        setBootstrap(!showBootstrap);
+    }
+    const TailwindcssHandler = () => {
+        setTailwindcss(!showTailwindcss);
+    }
+    const MaterialUIHandler = () => {
+        setMaterialUI(!showMaterialUI);
+    }
+    const FullResourcesHandler=()=>{
+        setFullResources(!showFullResources);
     }
 
 
@@ -103,12 +191,54 @@ export default function WebDevelopment() {
     const changeFrontendProjectDeploylinecolor = () => {
         setFrontendProjectDeployColorLine("bg-[#6dffa0]")
     }
+    const changeAPilinecolor = () => {
+        setAPIColorLine("bg-[#23daff]")
+    }
+    const changefullstackDeploymentlinecolor = () => {
+        setfullstackDeploymentColorLine("bg-[#0e1542]")
+    }
+    const changeProjectBuildlinecolor = () => {
+        setProjectBuildColorLine("bg-[#23daff]")
+    }
+    const changeLibraryFrameworklinecolor = () => {
+        setLibraryFrameworkColorLine("bg-[#23daff]")
+    }
+    const changeReactlinecolor = () => {
+        setReactColorLine("bg-[#23daff]")
+    }
+    const changeAngularlinecolor = () => {
+        setAngularColorLine("bg-[#23daff]")
+    }
+    const changeVuelinecolor = () => {
+        setVueColorLine("bg-[#23daff]")
+    }
+    const changeNextForReactlinecolor = () => {
+        setNextForReactColorLine("bg-[#23daff]")
+    }
+    const changeNuxtlinecolor = () => {
+        setNuxtColorLine("bg-[#23daff]")
+    }
+    const changeAngularUniversalcolor = () => {
+        setAngularUniversalColorLine("bg-[#23daff]")
+    }
+    const changeBootstrapcolor = () => {
+        setBootstrapColorLine("bg-[#23daff]")
+    }
+    const changeTailwindcsscolor = () => {
+        setTailwindcssColorLine("bg-[#23daff]")
+    }
+    const changeMaterialUIcolor = () => {
+        setMaterialUIColorLine("bg-[#23daff]")
+    }
 
 
 
     return (
-        <section className="relative md:w-[90%] w-[100%] flex flex-col justify-center items-center gap-8 overflow-hidden">
+        <section className="relative lg:w-[80%] w-[100%] flex flex-col pt-[5rem] justify-center items-center gap-8 overflow-hidden">
+            <div className='flex justify-center p-4 w-[100%]'>
 
+                <Header />
+            </div>
             {showCodeEditor && <CodeEditor closeEditor={() => setCodeEditor(false)} Done={ChangeCodeEditorLineColor} />}
             {showHTML && <Hyperpage closeHTML={() => setHTML(false)} Done={changehtmllinecolor} />}
             {showCSS && <CSSpage closeCSS={() => setCSS(false)} Done={changecsslinecolor} />}
@@ -119,18 +249,53 @@ export default function WebDevelopment() {
             {showDBMS && <DBMSpage closeDBMS={() => setDBMS(false)} Done={changeDBMSlinecolor} />}
             {showVCS && <VersionControlSystems closeVCS={() => setVCS(false)} Done={changeVCSlinecolor} />}
             {showFrontendProjectDeploy && <FrontendProjectDeploymentpage closeFrotendProjectDeploy={() => setFrontendProjectDeploy(false)} Done={changeFrontendProjectDeploylinecolor} />}
+            {showAPI && <APIpage closeAPI={() => setAPI(false)} Done={changeAPilinecolor} />}
+            {showfullstackDeployment && <FullstackDeploymentpage closeDeployment={() => setfullstackDeployment(false)} Done={changefullstackDeploymentlinecolor} />}
+            {showProjectBuild && <ProjectBuild closeProjectBuild={() => setProjectBuild(false)} Done={changeProjectBuildlinecolor} />}
+            {showLibraryFramework && <LibraryandFramework closeLibraryFramework={() => setLibraryFramework(false)} Done={changeLibraryFrameworklinecolor} />}
+            {showReact && <ReactPage closeReact={() => setReact(false)} Done={changeReactlinecolor} />}
+            {showAngular && <AngularPage closeAngular={() => setAngular(false)} Done={changeAngularlinecolor} />}
+            {showVue && <VuePage closeVue={() => setVue(false)} Done={changeVuelinecolor} />}
+            {showNextForReact && <NextForReact closeNextForReact={() => setNextForReact(false)} Done={changeNextForReactlinecolor} />}
+            {showNuxt && <NustPage closeNuxt={() => setNuxt(false)} Done={changeNuxtlinecolor} />}
+            {showAngularUniversal && <AngularUniversalPage closeAngularUniversal={() => setAngularUniversal(false)} Done={changeAngularUniversalcolor} />}
+            {showBootstrap && <BootstrapPage closeBootstrap={() => setBootstrap(false)} Done={changeBootstrapcolor} />}
+            {showTailwindcss && <Tailwindcss closeTailwindcss={() => setTailwindcss(false)} Done={changeTailwindcsscolor} />}
+            {showMaterialUI && <MaterialUIPage closeMaterialUI={() => setMaterialUI(false)} Done={changeMaterialUIcolor} />}
+            {showFullResources && <FullResources closeFullResources={()=>setFullResources(false)}/>}
 
-            <Header />
+
+
             <div className="fixed bottom-0 right-0 top-[90%] left-[82%] z-10 ">
-                <button className="bg-[#198de0] hover:bg-[#ffff] px-3 py-3  rounded-2xl  font-bold flex gap-2 ">full course Resource
-                    <img
-                    src={`${process.env.PUBLIC_URL}/assats/noteicon.svg`} alt="Description of"></img>
+                <button
+                onClick={FullResourcesHandler}
+                className="bg-[#198de0] hover:bg-[#ffff] px-3 py-3  rounded-2xl  font-bold flex gap-2 ">full course Resource
+                    <span class="material-symbols-outlined ">
+                        text_snippet
+                    </span>
                 </button>
             </div>
-            <div className="flex justify-center text-white text-xl border-b-2 border-white md:w-[90%] w-[100%]">
+            <div className="flex justify-center items-center gap-2 text-white text-xl border-b-2 border-white md:w-[90%] w-[100%]">
                 <h1>FULL STACK WEB DEVELOPMENT</h1>
+                <div className="relative inline-block">
+      {/* Button */}
+      <span
+        onMouseEnter={() => setIsTooltipVisible(true)}
+        onMouseLeave={() => setIsTooltipVisible(false)}
+        className="material-symbols-outlined hover:text-[#198de0] cursor-pointer"
+      >
+        help
+      </span>
+
+      {/* Tooltip */}
+      {isTooltipVisible && (
+        <div className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 p-2 bg-blue-500 text-white text-sm rounded shadow-md">
+          Hello
+        </div>
+      )}
+    </div>
             </div>
-            <div className="  flex flex-col justify-center items-center md:w-[90%] w-[100%] lg:p-0 p-[20px]">
+            <div className="  flex flex-col justify-center items-center md:w-[90%] w-[100%] lg:p-0 p-[20px] min-h-[100%]">
 
                 {/* code editor */}
                 <div className=" codeeditor flex w-[100%] h-[40rem] gap-8 justify-center items-center">
@@ -149,10 +314,10 @@ export default function WebDevelopment() {
                         <div className={`verticalLine h-[40%]  w-1 border-none ${CodeEditorColorLine}`}></div>
                     </div>
                 </div>
-                <div className="horizontalLine flex h-auto md:h-0 w-[100%] items-center justify-center border-none rounded-br-lg rounded-tl-xl">
-                    <div className={`hidden md:block h-1 w-[29.2%]  border-none ${CodeEditorColorLine} rounded-br-lg rounded-tl-xl`}></div>
-                    <div className={`p-[0.2rem] border-2 border-white flex items-center justify-center w-[100%] md:w-[10%] text-white text-lg`}><h4>Front-end</h4></div>
-                    <div className={`hidden md:block h-1 w-[29.2%]  border-none ${CodeEditorColorLine}  rounded-br-lg rounded-tl-xl`}></div>
+                <div className="horizontalLine flex h-auto md:h-0 w-[70vw] items-center justify-center border-none rounded-br-lg rounded-tl-xl">
+                    <div className={`hidden lg:block h-1 min-w-[25.5%]  border-none ${CodeEditorColorLine} rounded-br-lg rounded-tl-xl`}></div>
+                    <div className={`px-[0.5rem]  flex items-center justify-center w-auto text-white text-lg`}><h4>Front-end start here</h4></div>
+                    <div className={`hidden lg:block h-1 min-w-[25.5%]  border-none ${CodeEditorColorLine}  rounded-br-lg rounded-tl-xl`}></div>
                 </div>
 
 
@@ -162,7 +327,7 @@ export default function WebDevelopment() {
                         <div className={`verticalLine h-[40%]  w-1 border-none ${CodeEditorColorLine}`}></div>
                         <div
                             onClick={HTMLhandler}
-                            className="h-auto rounded-3xl w-40 p-3 bg-slate-500 items-center flex justify-center border-none font-bold  hover:bg-[#edff2a]  cursor-pointer">HTML</div>
+                            className="h-auto rounded-3xl w-40 p-3 bg-[#acc2ef] items-center flex justify-center border-none font-bold  hover:bg-[#edff2a]  cursor-pointer">HTML</div>
                         <div className={`verticalLine h-[40%]  w-1 border-none ${HTMLColorLine}`}></div>
                     </div>
                     <div className="w-[40rem] px-8 py-3   h-auto my-8 bg-gray-700 md:flex items-center justify-center border-2 rounded-md border-white text-lg text-[#eeecec] hidden">
@@ -192,7 +357,7 @@ export default function WebDevelopment() {
                         <div className={`verticalLine h-[50%]  w-1 border-none ${HTMLColorLine}`}></div>
                         <div
                             onClick={CSShandler}
-                            className="h-auto border-none rounded-3xl bg-slate-500 w-40 p-3 font-bold  items-center flex justify-center hover:bg-[#27ffd0] cursor-pointer">CSS</div>
+                            className="h-auto border-none rounded-3xl bg-[#acc2ef] w-40 p-3 font-bold  items-center flex justify-center hover:bg-[#27ffd0] cursor-pointer">CSS</div>
                         <div className={`verticalLine h-[50%]  w-1 border-none ${CSSColorLine}`}></div>
                     </div>
                 </div>
@@ -207,7 +372,7 @@ export default function WebDevelopment() {
                         <div className={`verticalLine h-[40%]  w-1 border-none ${CSSColorLine}`}></div>
                         <div
                             onClick={JShandler}
-                            className="h-auto border-none rounded-3xl w-40 p-3 bg-slate-500 items-center flex justify-center cursor-pointer font-bold hover:bg-[#2afc6c]">JavaScript</div>
+                            className="h-auto border-none rounded-3xl w-40 p-3 bg-[#acc2ef] items-center flex justify-center cursor-pointer font-bold hover:bg-[#2afc6c]">JavaScript</div>
                         <div className={`verticalLine h-[40%] w-1 ${JSColorLine}`}></div>
                     </div>
                     <div className="w-[40rem] px-8 py-3   h-auto my-8 bg-gray-700 md:flex items-center justify-center border-2 rounded-md border-white text-lg text-[#eeecec] hidden">
@@ -220,10 +385,12 @@ export default function WebDevelopment() {
                         </p>
                     </div>
                 </div>
-               
-                <div className="horizontalLine h-1 w-[70%] bg-gray-600  border-none rounded-br-lg rounded-tl-xl"></div>
+
+
+                {/* VersionControlSystems */}
+                <div className={`horizontalLine h-1 w-[70%] ${JSColorLine}  border-none rounded-br-lg rounded-tl-xl`}></div>
                 <div className="VersionControlSystems flex gap-8 justify-center items-center  w-[100%] h-[40%]">
-                   
+
                     <div className="w-[40rem] px-8 py-3   h-auto my-8 bg-gray-700 md:flex items-center justify-center border-2 rounded-md border-white text-lg text-[#eeecec] hidden">
                         <p>
                             Version control systems (VCS) like GitHub and GitLab are critical for managing and collaborating on code. They help track changes, manage multiple contributors, and integrate with automated pipelines for continuous delivery.
@@ -234,10 +401,10 @@ export default function WebDevelopment() {
                         </p>
                     </div>
                     <div className="flex flex-col justify-center items-center h-[100%]">
-                        <div className={`verticalLine h-[50%] w-1 ${DBMSColorLine}`}></div>
+                        <div className={`verticalLine h-[50%] w-1 ${JSColorLine}`}></div>
                         <div
-                        onClick={VCShandler}
-                        className="h-autp border-none rounded-3xl w-auto py-3 px-5 bg-slate-500 items-center flex justify-center cursor-pointer hover:bg-[#cc77e3]">Version Control Systems</div>
+                            onClick={VCShandler}
+                            className="h-autp border-none rounded-3xl w-auto py-3 px-5 bg-[#acc2ef] font-bold items-center flex justify-center cursor-pointer hover:bg-[#cc77e3]">Version Control Systems</div>
                         <div className={`verticalLine h-[50%] w-1 ${VCSColorLine}`}></div>
                     </div>
                 </div>
@@ -248,12 +415,12 @@ export default function WebDevelopment() {
                         <div className={`verticalLine h-[40%]  w-1 border-none ${VCSColorLine}`}></div>
                         <div
                             onClick={FrontendProjectDeployhandler}
-                            className="h-auto border-none rounded-3xl w-40 p-3 bg-slate-500 items-center flex justify-center cursor-pointer font-bold hover:bg-[#6dffa0]">Frontend Project deployment</div>
+                            className="h-auto border-none rounded-3xl w-40 p-3 bg-[#acc2ef] items-center flex justify-center cursor-pointer font-bold hover:bg-[#6dffa0]">Frontend Project deployment</div>
                         <div className={`verticalLine h-[40%] w-1 ${FrontendProjectDeployColorLine}`}></div>
                     </div>
                     <div className="w-[40rem] px-8 py-3   h-auto my-8 bg-gray-700 md:flex items-center justify-center border-2 rounded-md border-white text-lg text-[#eeecec] hidden">
                         <p>
-                        Deploying a frontend project built with HTML, CSS, and JavaScript involves hosting your static files on a server, making your application accessible online. Popular platforms like GitHub Pages, Netlify, and Vercel offer free and easy-to-use solutions for hosting static sites.
+                            Deploying a frontend project built with HTML, CSS, and JavaScript involves hosting your static files on a server, making your application accessible online. Popular platforms like GitHub Pages, Netlify, and Vercel offer free and easy-to-use solutions for hosting static sites.
                         </p>
                     </div>
                     <div className="w-auto p-2 h-auto  md:h-auto my-8 bg-gray-700 flex items-center justify-center border-2 rounded-md border-white text-sm text-[#eeecec] md:hidden">
@@ -261,7 +428,7 @@ export default function WebDevelopment() {
                         </p>
                     </div>
                 </div>
-               
+
                 <div className="horizontalLine flex h-auto md:h-0 w-[100%] items-center justify-center border-none rounded-br-lg rounded-tl-xl">
                     <div className={`hidden md:block h-1 w-[30%]  border-none ${FrontendProjectDeployColorLine} rounded-br-lg rounded-tl-xl`}></div>
                     <div className=" p-[0.2rem] border-2 border-white flex items-center justify-center md:w-[10%] w-[100%] text-white text-lg"><h4>Back-end</h4></div>
@@ -281,7 +448,7 @@ export default function WebDevelopment() {
                         <div className={`verticalLine h-[50%] w-1 ${FrontendProjectDeployColorLine} border-none`}></div>
                         <div
                             onClick={PMhandler}
-                            className="h-auto border-none rounded-3xl w-40 py-3 px-2  items-center flex justify-center font-bold bg-slate-600 hover:bg-[#3c9dca] cursor-pointer">Package manager
+                            className="h-auto border-none rounded-3xl w-40 py-3 px-2  items-center flex justify-center font-bold bg-[#acc2ef] hover:bg-[#3c9dca] cursor-pointer">Package manager
                         </div>
                         <div className={`verticalLine h-[50%] w-1 ${PMColorLine} border-none`}></div>
                     </div>
@@ -294,7 +461,7 @@ export default function WebDevelopment() {
                         <div className={`verticalLine h-[50%] w-1 ${PMColorLine}`}></div>
                         <div
                             onClick={NodeJShandler}
-                            className="h-auto font-bold hover:bg-[#0f1855] hover:text-white rounded-3xl w-40 p-3 bg-slate-500 items-center flex justify-center cursor-pointer ">Node.js</div>
+                            className="h-auto font-bold hover:bg-[#0f1855] hover:text-white rounded-3xl w-40 p-3 bg-[#acc2ef] items-center flex justify-center cursor-pointer ">Node.js</div>
                         <div className={`verticalLine h-[50%] w-1 ${NodeJsColorLine}`}></div>
                     </div>
                     <div className="w-[40rem] px-8 py-3   h-auto my-8 bg-gray-700 md:flex items-center justify-center border-2 rounded-md border-white text-lg text-[#eeecec] hidden">
@@ -321,19 +488,21 @@ export default function WebDevelopment() {
                     <div className="flex flex-col justify-center items-center h-[100%]">
                         <div className={`verticalLine h-[50%] w-1 ${NodeJsColorLine} border-none`}></div>
                         <div
-                        onClick={Expresshandler}
-                        className="h-auto trackstyle rounded-3xl w-40 p-3 bg-slate-500 hover:bg-[#144326] hover:text-white font-bold items-center flex justify-center cursor-pointer">Express.js</div>
+                            onClick={Expresshandler}
+                            className="h-auto trackstyle rounded-3xl w-40 p-3 bg-[#acc2ef] hover:bg-[#144326] hover:text-white font-bold items-center flex justify-center cursor-pointer">Express.js</div>
                         <div className={`verticalLine h-[50%] w-1 ${ExpressColorLine} border-none`}></div>
                     </div>
                 </div>
                 <div className={`horizontalLine h-2 w-[70%] ${ExpressColorLine}  border-none rounded-br-lg rounded-tl-xl`}></div>
 
+
+                {/* DBMS */}
                 <div className="DatabaseManagement w-[100%] flex gap-8 justify-center items-center h-[40%]">
                     <div className="flex flex-col justify-center items-center h-[100%]">
                         <div className={`verticalLine h-[50%] w-1 ${ExpressColorLine}`}></div>
                         <div
-                        onClick={DBMShandler}
-                        className="h-auto font-bold border-none rounded-3xl w-auto py-3 px-5 bg-slate-500 items-center flex justify-center cursor-pointer hover:bg-blue-300">Database Management</div>
+                            onClick={DBMShandler}
+                            className="h-auto font-bold border-none rounded-3xl w-auto py-3 px-5 bg-[#acc2ef] items-center flex justify-center cursor-pointer hover:bg-blue-300">Database Management</div>
                         <div className={`verticalLine h-[50%] w-1 ${DBMSColorLine}`}></div>
                     </div>
                     <div className="w-[40rem] p-2   h-auto my-8 bg-gray-700 md:flex items-center justify-center border-2 rounded-md border-white text-lg text-[#eeecec] ">
@@ -352,20 +521,26 @@ export default function WebDevelopment() {
                     </div>
                     <div className="flex flex-col justify-center items-center h-[100%]">
                         <div className={`verticalLine h-[50%] w-1 ${DBMSColorLine} border-none`}></div>
-                        <div className="h-auto border-none rounded-3xl w-40 p-3 bg-slate-500 items-center flex justify-center hover:bg-green-300 cursor-pointer">APIs</div>
+                        <div
+                            onClick={APIhandler}
+                            className="h-auto border-none rounded-3xl w-40 p-3 bg-[#acc2ef] items-center flex justify-center hover:bg-green-300 cursor-pointer">APIs</div>
                         <div className="verticalLine h-[50%] w-1 bg-gray-600 border-none"></div>
                     </div>
                 </div>
                 <div className="horizontalLine h-1 w-[70%] bg-gray-600  border-none rounded-br-lg rounded-tl-xl"></div>
-                <div className="VersionControlSystems flex gap-8 justify-center items-center  w-[100%] h-[40%]">
+
+                {/* fullstackDeployment */}
+                <div className="fullstackdeployment flex gap-8 justify-center items-center  w-[100%] h-[40%]">
                     <div className="flex flex-col justify-center items-center h-[100%]">
                         <div className={`verticalLine h-[50%] w-1 ${DBMSColorLine}`}></div>
-                        <div className="h-autp border-none rounded-3xl w-auto py-3 px-5 bg-slate-500 items-center flex justify-center cursor-pointer hover:bg-blue-300">Main Concepts</div>
+                        <div
+                            onClick={fullstackDeploymenthandler}
+                            className="h-autp border-none rounded-3xl w-auto py-3 px-5 bg-[#acc2ef] items-center flex justify-center cursor-pointer hover:bg-blue-300">Full Stack Project Deployment</div>
                         <div className={`verticalLine h-[50%] w-1 ${DBMSColorLine}`}></div>
                     </div>
                     <div className="w-[40rem] px-8 py-3   h-auto my-8 bg-gray-700 md:flex items-center justify-center border-2 rounded-md border-white text-lg text-[#eeecec] hidden">
                         <p>
-                            Version control systems (VCS) like GitHub and GitLab are critical for managing and collaborating on code. They help track changes, manage multiple contributors, and integrate with automated pipelines for continuous delivery.
+                            Full-stack development involves building both the frontend and backend of web applications. It requires knowledge of multiple technologies and tools to create a complete and functional product.
                         </p>
                     </div>
                     <div className="w-auto p-2 h-auto  md:h-auto my-8 bg-gray-700 flex items-center justify-center border-2 rounded-md border-white text-sm text-[#eeecec] md:hidden">
@@ -374,6 +549,8 @@ export default function WebDevelopment() {
                     </div>
                 </div>
                 <div className="horizontalLine h-1 w-[70%] bg-gray-600  border-none rounded-bl-lg rounded-tr-xl"></div>
+
+                {/* project build */}
                 <div className="ProjectBuild flex w-[100%] gap-8 h-[40%] justify-center items-center">
                     <div className="w-[40rem] p-2   h-auto my-8 bg-gray-700 md:flex items-center justify-center border-2 rounded-md border-white text-sm md:text-lg text-[#eeecec]">
                         <p>Building a project involves planning, coding, testing, and deploying your application. It requires end-to-end execution, from ideation to production readiness, ensuring a robust and user-friendly product.
@@ -381,7 +558,9 @@ export default function WebDevelopment() {
                     </div>
                     <div className="flex flex-col justify-center items-center h-[100%]">
                         <div className="verticalLine h-[50%] w-1 bg-gray-600 border-none"></div>
-                        <div className="h-auto border-none rounded-3xl w-40 p-3 bg-slate-500 items-center flex justify-center hover:bg-green-300 cursor-pointer">Project Build</div>
+                        <div
+                            onClick={ProjectBuildhandler}
+                            className="h-auto border-none rounded-3xl w-40 p-3 bg-[#acc2ef] items-center flex justify-center hover:bg-green-300 cursor-pointer">Project Build</div>
                         <div className="verticalLine h-[50%] w-1 bg-gray-600 border-none"></div>
                     </div>
                 </div>
@@ -390,10 +569,14 @@ export default function WebDevelopment() {
                     <div className="p-[0.2rem] border-2 border-white w-[100%] md:w-[38%] flex justify-center items-center text-white text-lg"><h4>Understanding Frameworks and Libraries</h4></div>
                     <div className="hidden md:block h-1 w-[15.5%] bg-gray-600  border-none rounded-br-lg rounded-tl-xl"></div>
                 </div>
+
+                {/* libraryandframework  */}
                 <div className="Libraryandframework flex gap-8 justify-center items-center  w-[100%] h-[40%]">
                     <div className="flex flex-col justify-center items-center h-[100%]">
                         <div className="verticalLine h-[50%] w-1 bg-gray-600"></div>
-                        <div className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-slate-500 items-center flex justify-center cursor-pointer hover:bg-blue-300">Library and framework</div>
+                        <div
+                            onClick={LibraryFrameworkhandler}
+                            className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-[#acc2ef] items-center flex justify-center cursor-pointer hover:bg-blue-300">Library and framework</div>
                         <div className="verticalLine h-[50%] w-1 bg-gray-600"></div>
                     </div>
                     <div className="w-[40rem] p-2   h-auto my-8 bg-gray-700 md:flex items-center justify-center border-2 rounded-md border-white text-sm md:text-lg text-[#eeecec]">
@@ -406,7 +589,9 @@ export default function WebDevelopment() {
                     <div className="w-[100%] md:w-[35%] p-[0.2rem] border-2 border-white flex justify-center items-center text-white text-lg"><h4>Frontend Library/Framework</h4></div>
                     <div className="hidden md:block h-1 w-[20%] bg-gray-600  border-none rounded-br-lg rounded-tl-xl"></div>
                 </div>
-                <div className=" frontendlibraryframework flex w-[100%] gap-8 h-[40%] justify-center items-center">
+
+                {/* frontend library and framework */}
+                <div className=" frontendlibraryframework flex w-[100%] gap-8 h-[60%] justify-center items-center">
                     <div className="w-[40rem] px-8 py-3   h-auto my-8 bg-gray-700 md:flex items-center justify-center border-2 rounded-md border-white text-lg text-[#eeecec] hidden">
                         <p> it’s essential to learn a frontend library or framework to build interactive and dynamic web applications. The three most popular ones are React, Angular, and Vue. Each has its strengths, and your choice depends on your needs, but the core principles remain similar across them.
                         </p>
@@ -416,13 +601,25 @@ export default function WebDevelopment() {
                         </p>
                     </div>
                     <div className="flex flex-col  justify-center items-center h-[100%]">
+
                         <div className="verticalLine h-[20%] w-1 bg-gray-600 border-none"></div>
-                        <div className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-slate-500 items-center flex justify-center hover:bg-green-300 cursor-pointer">React (Library)</div>
+                        <div
+                            onClick={Reacthandler}
+                            className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-[#acc2ef] items-center flex justify-center hover:bg-green-300 cursor-pointer">React (Library)</div>
+
                         <div className="verticalLine h-[20%] w-1 bg-gray-600 border-none"></div>
-                        <div className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-slate-500 items-center flex justify-center hover:bg-green-300 cursor-pointer">Angular (Framework)</div>
+
+                        <div
+
+                            onClick={Angularhandler}
+                            className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-[#acc2ef] items-center flex justify-center hover:bg-green-300 cursor-pointer">Angular (Framework)</div>
+
                         <div className="verticalLine h-[20%] w-1 bg-gray-600 border-none"></div>
-                        <div className="h-auto border-none rounded-3xl w-auto  py-3 px-5 bg-slate-500 items-center flex justify-center hover:bg-green-300 cursor-pointer">Vue(Framework)</div>
-                        <div className="verticalLine h-[2rem] w-1 bg-gray-600 border-none"></div>
+
+                        <div
+                            onClick={Vuehandler}
+                            className="h-auto border-none rounded-3xl w-auto  py-3 px-5 bg-[#acc2ef] items-center flex justify-center hover:bg-green-300 cursor-pointer">Vue(Framework)</div>
+                        <div className="verticalLine h-[20%] w-1 bg-gray-600 border-none"></div>
                     </div>
                 </div>
                 <div className="horizontalLine flex h-auto md:h-0 w-[100%] items-center justify-center border-none rounded-br-lg rounded-tl-xl">
@@ -430,13 +627,24 @@ export default function WebDevelopment() {
                     <div className="p-[0.2rem] border-2 border-white w-[100%] md:w-[30%] flex justify-center items-center text-white text-lg"><h4>Server-Side Rendering (SSR)</h4></div>
                     <div className="hidden md:block h-1 w-[20%] bg-gray-600  border-none rounded-br-lg rounded-tl-xl"></div>
                 </div>
-                <div className="server-siderendering flex gap-8 justify-center items-center  w-[100%] h-[80%]">
+
+                {/* server side rendering */}
+                <div className="server-siderendering flex gap-8 justify-center items-center  w-[100%] h-[60%]">
                     <div className="flex flex-col justify-center items-center h-[100%]">
-                        <div className="verticalLine h-[50%] w-1 bg-gray-600 border-none"></div>
-                        <div className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-slate-500 items-center flex justify-center hover:bg-green-300 cursor-pointer">Next.js (for React)</div>
-                        <div className="verticalLine h-[50%] w-1 bg-gray-600 border-none"></div>
-                        <div className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-slate-500 items-center flex justify-center hover:bg-green-300 cursor-pointer">Nuxt.js (for Vue)</div>
-                        <div className="verticalLine h-[50%] w-1 bg-gray-600 border-none"></div>
+                        <div className="verticalLine h-[20%] w-1 bg-gray-600 border-none"></div>
+                        <div
+                            onClick={NextForReactHandler}
+                            className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-[#acc2ef] items-center flex justify-center hover:bg-green-300 cursor-pointer">Next.js (for React)</div>
+                        <div className="verticalLine h-[20%] w-1 bg-gray-600 border-none"></div>
+
+                        <div
+                            onClick={NuxtHandler}
+                            className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-[#acc2ef] items-center flex justify-center hover:bg-green-300 cursor-pointer">Nuxt.js (for Vue)</div>
+                        <div className="verticalLine h-[20%] w-1 bg-gray-600 border-none"></div>
+                        <div
+                            onClick={AngularUniversalHandler}
+                            className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-[#acc2ef] items-center flex justify-center hover:bg-green-300 cursor-pointer">Angular Universal (for Angular)</div>
+                        <div className="verticalLine h-[20%] w-1 bg-gray-600 border-none"></div>
                     </div>
                     <div className="w-[40rem] px-8 py-3   h-auto my-8 bg-gray-700 md:flex items-center justify-center border-2 rounded-md border-white text-lg text-[#eeecec] hidden">
                         <p>To take your web development skills to the next level, it's important to learn Server-Side Rendering (SSR). This technique involves rendering a web page on the server rather than in the browser, which can significantly improve page load times and SEO.
@@ -453,6 +661,8 @@ export default function WebDevelopment() {
                     <div className="p-[0.2rem] border-2 border-white w-[100%] md:w-[30%] flex justify-center items-center text-white text-lg"><h4>CSS Frameworks</h4></div>
                     <div className="hidden md:block h-1 w-[24.8%] bg-gray-600  border-none rounded-br-lg rounded-tl-xl"></div>
                 </div>
+
+                {/* CSSframework */}
                 <div className="CSSframework flex w-[100%] gap-8 h-[80%] justify-center items-center">
                     <div className="w-[40rem] px-8 py-3   h-auto my-8 bg-gray-700 md:flex items-center justify-center border-2 rounded-md border-white text-lg text-[#eeecec] hidden">
                         <p> CSS frameworks provide pre-designed and reusable code that simplifies the process of styling your web applications. By using these frameworks, you can focus more on the functionality and layout of your app, rather than spending time writing all the CSS from scratch.
@@ -464,12 +674,18 @@ export default function WebDevelopment() {
                     </div>
                     <div className="flex flex-col  justify-center items-center h-[100%]">
                         <div className="verticalLine h-[50%] w-1 bg-gray-600 border-none"></div>
-                        <div className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-slate-500 items-center flex justify-center hover:bg-green-300 cursor-pointer">Bootstrap</div>
+                        <div
+                            onClick={BootstrapHandler}
+                            className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-[#acc2ef] items-center flex justify-center hover:bg-green-300 cursor-pointer">Bootstrap</div>
                         <div className="verticalLine h-[50%] w-1 bg-gray-600 border-none"></div>
-                        <div className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-slate-500 items-center flex justify-center hover:bg-green-300 cursor-pointer">Tailwind CSS
+                        <div
+                            onClick={TailwindcssHandler}
+                            className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-[#acc2ef] items-center flex justify-center hover:bg-green-300 cursor-pointer">Tailwind CSS
                         </div>
                         <div className="verticalLine h-[50%] w-1 bg-gray-600 border-none"></div>
-                        <div className="h-auto border-none rounded-3xl w-auto  py-3 px-5 bg-slate-500 items-center flex justify-center hover:bg-green-300 cursor-pointer">Material-UI</div>
+                        <div
+                            onClick={MaterialUIHandler}
+                            className="h-auto border-none rounded-3xl w-auto  py-3 px-5 bg-[#acc2ef] items-center flex justify-center hover:bg-green-300 cursor-pointer">Material-UI</div>
                         <div className="verticalLine h-[50%] w-1 bg-gray-600 border-none"></div>
                     </div>
                 </div>
@@ -481,11 +697,11 @@ export default function WebDevelopment() {
                 <div className="statemanagement flex gap-8 justify-center items-center  w-[100%] h-[80%]">
                     <div className="flex flex-col justify-center items-center h-[100%]">
                         <div className="verticalLine h-[40%] w-1 bg-gray-600 border-none"></div>
-                        <div className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-slate-500 items-center flex justify-center hover:bg-green-300 cursor-pointer">React Context API</div>
+                        <div className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-[#acc2ef] items-center flex justify-center hover:bg-green-300 cursor-pointer">React Context API</div>
                         <div className="verticalLine h-[40%] w-1 bg-gray-600 border-none"></div>
-                        <div className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-slate-500 items-center flex justify-center hover:bg-green-300 cursor-pointer">Redux</div>
+                        <div className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-[#acc2ef] items-center flex justify-center hover:bg-green-300 cursor-pointer">Redux</div>
                         <div className="verticalLine h-[40%] w-1 bg-gray-600 border-none"></div>
-                        <div className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-slate-500 items-center flex justify-center hover:bg-green-300 cursor-pointer">Zustand</div>
+                        <div className="h-auto border-none rounded-3xl w-auto py-3 px-5 bg-[#acc2ef] items-center flex justify-center hover:bg-green-300 cursor-pointer">Zustand</div>
                         <div className="verticalLine h-[40%] w-1 bg-gray-600 border-none"></div>
                     </div>
                     <div className="w-[40rem] px-8 py-3   h-auto my-8 bg-gray-700 md:flex items-center justify-center border-2 rounded-md border-white text-lg text-[#eeecec] hidden">
