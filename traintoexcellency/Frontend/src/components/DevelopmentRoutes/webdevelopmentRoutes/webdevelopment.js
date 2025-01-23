@@ -25,7 +25,7 @@ import BootstrapPage from "./Bootstrap";
 import Tailwindcss from "./Tailwindcss";
 import MaterialUIPage from "./Material_UI";
 import FullResources from "./FullResources";
-
+import Details from "./Details";
 
 export default function WebDevelopment() {
     const [showCodeEditor, setCodeEditor] = useState(false);
@@ -51,8 +51,9 @@ export default function WebDevelopment() {
     const [showBootstrap, setBootstrap] = useState(false);
     const [showTailwindcss, setTailwindcss] = useState(false);
     const [showMaterialUI, setMaterialUI] = useState(false);
-    const[showFullResources,setFullResources]=useState(false);
+    const [showFullResources, setFullResources] = useState(false);
     const [isTooltipVisible, setIsTooltipVisible] = useState(false);
+    const [showDetails, setDetails] = useState(false)
 
 
 
@@ -153,8 +154,11 @@ export default function WebDevelopment() {
     const MaterialUIHandler = () => {
         setMaterialUI(!showMaterialUI);
     }
-    const FullResourcesHandler=()=>{
+    const FullResourcesHandler = () => {
         setFullResources(!showFullResources);
+    }
+    const DetailPageHandler = () => {
+        setDetails(!showDetails)
     }
 
 
@@ -234,7 +238,7 @@ export default function WebDevelopment() {
 
 
     return (
-        <section className="relative lg:w-[80%] w-[100%] flex flex-col pt-[5rem] justify-center items-center gap-8 overflow-hidden">
+        <section className={`relative lg:w-[80%] w-[100%] flex flex-col ${showDetails?'': "pt-[5rem]"} justify-center items-center gap-8 overflow-hidden`}>
             <div className='flex justify-center p-4 w-[100%]'>
 
                 <Header />
@@ -262,14 +266,14 @@ export default function WebDevelopment() {
             {showBootstrap && <BootstrapPage closeBootstrap={() => setBootstrap(false)} Done={changeBootstrapcolor} />}
             {showTailwindcss && <Tailwindcss closeTailwindcss={() => setTailwindcss(false)} Done={changeTailwindcsscolor} />}
             {showMaterialUI && <MaterialUIPage closeMaterialUI={() => setMaterialUI(false)} Done={changeMaterialUIcolor} />}
-            {showFullResources && <FullResources closeFullResources={()=>setFullResources(false)}/>}
+            {showFullResources && <FullResources closeFullResources={() => setFullResources(false)} />}
 
 
 
             <div className="fixed bottom-0 right-0 top-[90%] left-[82%] z-10 ">
                 <button
-                onClick={FullResourcesHandler}
-                className="bg-[#198de0] hover:bg-[#ffff] px-3 py-3  rounded-2xl  font-bold flex gap-2 ">full course Resource
+                    onClick={FullResourcesHandler}
+                    className="bg-[#198de0] hover:bg-[#ffff] px-3 py-3  rounded-2xl  font-bold flex gap-2 ">full course Resource
                     <span class="material-symbols-outlined ">
                         text_snippet
                     </span>
@@ -278,23 +282,16 @@ export default function WebDevelopment() {
             <div className="flex justify-center items-center gap-2 text-white text-xl border-b-2 border-white md:w-[90%] w-[100%]">
                 <h1>FULL STACK WEB DEVELOPMENT</h1>
                 <div className="relative inline-block">
-      {/* Button */}
-      <span
-        onMouseEnter={() => setIsTooltipVisible(true)}
-        onMouseLeave={() => setIsTooltipVisible(false)}
-        className="material-symbols-outlined hover:text-[#198de0] cursor-pointer"
-      >
-        help
-      </span>
-
-      {/* Tooltip */}
-      {isTooltipVisible && (
-        <div className="absolute bottom-full mb-2 left-1/2 transform -translate-x-1/2 p-2 bg-blue-500 text-white text-sm rounded shadow-md">
-          Hello
-        </div>
-      )}
-    </div>
+                    {/* Button */}
+                    <span
+                        onClick={DetailPageHandler}
+                        className="material-symbols-outlined hover:text-[#198de0] cursor-pointer"
+                    >
+                        help
+                    </span>
+                </div>
             </div>
+            {showDetails? < Details/> : (
             <div className="  flex flex-col justify-center items-center md:w-[90%] w-[100%] lg:p-0 p-[20px] min-h-[100%]">
 
                 {/* code editor */}
@@ -715,6 +712,7 @@ export default function WebDevelopment() {
                 </div>
                 <div className="horizontalLine h-1 w-[70%] bg-gray-600  border-none rounded-bl-lg rounded-tr-xl"></div>
             </div>
+            )}
         </section>
     );
 }

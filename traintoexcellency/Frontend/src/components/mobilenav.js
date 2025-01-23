@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom"
 export default function MobileNav() {
     const location =useLocation();
     return (
-        <section className="block md:hidden w-[100%] h-16 sticky bottom-0 m-0 bg-gray-800">
+        <section className="block md:hidden z-100 w-[100%] h-16 sticky bottom-0 m-0 bg-gray-800">
             <ul className="grid grid-cols-5  gap-2 justify-evenly items-center">
                 <Link to="/traintoexcellency/Frontend-build/development" >
                     <li className={`text-white ${location.pathname === '/development' ? 'text-[#00ffea]' : ''} lg:list-none lg:gap-1 flex items-center lg:flex-row flex-col text-gray-300 hover:text-gray-100 hover:font-bold min-w-[18%] text-[10px]`}>

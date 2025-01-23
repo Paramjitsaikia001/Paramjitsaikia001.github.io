@@ -68,3 +68,18 @@ code {
   background: rgb(154, 238, 251);
   background: linear-gradient(58deg, rgba(154, 238, 251, 1) 100%, rgba(0, 82, 94, 1) 100%, rgba(42, 200, 224, 1) 100%, rgba(17, 182, 208, 1) 100%, rgba(96, 233, 254, 1) 100%);
 }
+
+.animation{
+  transition: all;
+  transition-duration: 3s;
+  translate: DetailPageAnimation;
+}
+
+@keyframes DetailPageAnimation {
+  0%{
+    height: 0;
+  }
+  100%{
+    height: 80%;
+  }
+}

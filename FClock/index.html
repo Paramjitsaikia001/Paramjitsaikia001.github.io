@@ -15,8 +15,13 @@
     <ul>
       <li>FClock</li>
       <ul class="navright">
-        <li>
-          <button id="fullScreenBtn">Go Full Screen</button>
+        <li class="ScreenSizeControlBtn" id="fullScreenBtn">
+          <button id="openfullScreenBtn">
+            <img class="FullScreenBtnClass" src="./assets/Images/open_in_full_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="full screen">
+          </button>
+          <button id="exitfullScreenBtn " class="hidden exit-full-screen">
+              exit
+          </button>
         </li>
         <li id="settingBTN">
           <span class="material-symbols-outlined">
@@ -27,34 +32,8 @@
     </ul>
     <ul class="hidden" id="settingNAV">
       <li id="hourSetting">Hour</li>
-      <ul class="hidden" id="hourOptions">
-        <li>
-          <button id="12HourBtn">12 Hour</button>
-          <button id="24HourBtn">24 Hour</button>
-        </li>
-      </ul>
       <li id="themeSetting">Themes</li>
-      <ul class="hidden" id="themeOptions">
-        <li>
-          <button class="themeBtn" data-color="light">Light</button>
-          <button class="themeBtn" data-color="dark">Dark</button>
-          <button class="themeBtn" data-color="blue">Blue</button>
-        </li>
-      </ul>
       <li id="studyTimeSetting">Set Study Time</li>
-      <ul class="hidden" id="studyTimeOptions">
-        <li>
-          <label for="studyDuration">Study Duration (minutes):</label>
-          <input type="number" id="studyDuration" min="1">
-        </li>
-        <li>
-          <label for="breakDuration">Break Duration (minutes):</label>
-          <input type="number" id="breakDuration" min="1">
-        </li>
-        <li>
-          <button id="startStudyTimer">Start Timer</button>
-        </li>
-      </ul>
     </ul>
   </nav>
   <main class="time-container">

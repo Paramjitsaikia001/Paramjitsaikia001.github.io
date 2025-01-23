@@ -1,5 +1,7 @@
 
 import React from 'react';
+
+import { CopilotKit } from "@copilotkit/react-core"; 
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import Main_left from './components/mainleft';
 import Main_right from './components/mainright';
@@ -18,29 +20,30 @@ import Webdev from './components/DevelopmentRoutes/webdevelopmentRoutes/webdevel
 import AiChatPage from './components/AiChatPage';
 function App() {
   return (
-    <Router>
-      <main className='flex p-0 m-0 bg-gray-800 font-[Raleway]'>
-        <Main_left/>
-        <Routes>
-          <Route path='/traintoexcellency/Frontend-build/' element={<Main_right/>} />
-          <Route path="/traintoexcellency/Frontend-build/development" element={<Development />} />
-          <Route path="/traintoexcellency/Frontend-build/language" element={<Language />} />
-          <Route path="/traintoexcellency/Frontend-build/explore" element={<Explore />} />
-          <Route path="/traintoexcellency/Frontend-build/About-us" element={<Contact />} />
-          <Route path="/traintoexcellency/Frontend-build/ai-chat" element={<AiChatPage />} />
+    <CopilotKit publicApiKey="ck_pub_531e9ef7603eaf37a5e2bfa0a4789321"> 
+      <Router>
+        <main className='flex p-0 m-0 bg-gray-800 font-[Raleway]'>
+          <Main_left />
+          <Routes>
+            <Route path='/traintoexcellency/Frontend-build/' element={<Main_right />} />
+            <Route path="/traintoexcellency/Frontend-build/development" element={<Development />} />
+            <Route path="/traintoexcellency/Frontend-build/language" element={<Language />} />
+            <Route path="/traintoexcellency/Frontend-build/explore" element={<Explore />} />
+            <Route path="/traintoexcellency/Frontend-build/About-us" element={<Contact />} />
+            <Route path="/traintoexcellency/Frontend-build/ai-chat" element={<AiChatPage />} />
 
-          <Route path="/traintoexcellency/Frontend-build/development/appdev" element={<AppDev />} />
+            <Route path="/traintoexcellency/Frontend-build/development/appdev" element={<AppDev />} />
 
-          <Route path="/traintoexcellency/Frontend-build/development/AIML" element={<AiML />} />
+            <Route path="/traintoexcellency/Frontend-build/development/AIML" element={<AiML />} />
 
-          <Route path="/traintoexcellency/Frontend-build/development/gamedev" element={<Gamedev />} />
+            <Route path="/traintoexcellency/Frontend-build/development/gamedev" element={<Gamedev />} />
 
 
-          <Route path="/traintoexcellency/Frontend-build/development/webdev" element={<Webdev />} />
-        </Routes>
-      </main>
-    </Router>
-
+            <Route path="/traintoexcellency/Frontend-build/development/webdev" element={<Webdev />} />
+          </Routes>
+        </main>
+      </Router>
+    </CopilotKit>
   );
 }
 

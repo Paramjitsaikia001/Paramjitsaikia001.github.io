@@ -5,20 +5,20 @@ import AIChatIcon from '../assats/askme.svg';
 export default function Mainleft() {
     const location = useLocation();
     return (
-        <section className=" transition-all duration-500 ease-linear transform origin-left hidden md:flex md:flex-col md:h-[100vh] md:sticky md:top-0 md:items-center   md:w-[20%] md:p-0 md:m-0 md:bg-gray-800 md:border-r-2 md:border-gray-600">
+        <section className=" transition-all duration-500 ease-linear transform origin-left hidden md:flex md:flex-col md:h-[100vh] md:sticky md:top-0 md:items-center justify-between  md:w-[20%] md:p-0 md:m-0 md:bg-gray-800 md:border-r-2 md:border-gray-600">
 
             <section className="flex flex-col items-center gap-10 h-[65vh] w-[100%] pt-8">
                 <Logo />
                 <nav className='hidden md:block'>
-                    <ul className="flex flex-col gap-4 justify-start w-[10rem] text-xl pb-2">
+                    <ul className="flex flex-col justify-start w-[12rem] text-xl pb-2 gap-1 ">
                         <Link to="/traintoexcellency/Frontend-build/" >
-                            <li className={`text-white ${location.pathname === '/traintoexcellency/Frontend-build/' ? 'text-[#00ffea]' : ''} lg:list-none lg:gap-1 flex items-center lg:flex-row flex-col text-gray-300  hover:font-bold`}>
+                            <li className={`text-white ${location.pathname === '/traintoexcellency/Frontend-build/' ? 'text-[#00ffea]' : ''} lg:list-none lg:gap-1 flex items-center lg:flex-row flex-col text-gray-300 md:py-2 px-3 hover:bg-[#314969] rounded-full  hover:font-bold `}>
                                 <span className="material-symbols-outlined">home</span>
                                 <span>Home</span>
                             </li>
                         </Link>
                         <Link to="/traintoexcellency/Frontend-build/development" >
-                            <li className={`text-white ${location.pathname === '/traintoexcellency/Frontend-build/development' ? 'font-bold' : ''} lg:list-none lg:gap-1 flex items-center lg:flex-row flex-col text-gray-300 hover:text-gray-100 hover:font-bold`}>
+                            <li className={`text-white ${location.pathname === '/traintoexcellency/Frontend-build/development' ? 'font-bold' : ''} lg:list-none lg:gap-1 flex items-center lg:flex-row md:py-2 px-3 flex-col hover:bg-[#314969] rounded-full  text-gray-300 hover:text-gray-100 hover:font-bold`}>
                                 <span className={`${location.pathname === '/traintoexcellency/Frontend-build/development' ? 'text-[#4bbcc0]' : ''} material-symbols-outlined`}>developer_board</span>
                                 <div
                                     className={`${location.pathname === '/traintoexcellency/Frontend-build/development' ? 'text-[#0ff]' : ''}`}>
@@ -27,13 +27,19 @@ export default function Mainleft() {
                             </li>
                         </Link>
                         <Link to="/traintoexcellency/Frontend-build/language" >
-                            <li className={`text-white ${location.pathname === '/language' ? 'text-[#00ffea]' : ''} lg:list-none lg:gap-1 flex items-center lg:flex-row flex-col text-gray-300 hover:text-gray-100 hover:font-bold`}>
+                            <li className={`text-white ${location.pathname === '/language' ? 'text-[#00ffea]' : ''} lg:list-none lg:gap-1 flex md:py-2 px-3 hover:bg-[#314969] rounded-full  items-center lg:flex-row flex-col text-gray-300 hover:text-gray-100 hover:font-bold`}>
                                 <span className="material-symbols-outlined">code_blocks</span>
                                 <span>Language</span>
                             </li>
                         </Link>
+                        <Link to="/traintoexcellency/Frontend-build/ai-chat">
+                        <li className={`text-white ${location.pathname === '/language' ? 'text-[#00ffea]' : ''} lg:list-none lg:gap-1 flex md:py-2 px-3 hover:bg-[#314969] rounded-full  items-center lg:flex-row flex-col text-gray-300 hover:text-gray-100 hover:font-bold`}>
+                            <img src={AIChatIcon} alt="AiChatIcon" />
+                            <h2 >AI Chat</h2>
+                        </li>
+                    </Link>
                         <Link to="/traintoexcellency/Frontend-build/explore" >
-                            <li className={`text-white ${location.pathname === '/explore' ? 'text-[#00ffea]' : ''} lg:list-none lg:gap-1 flex items-center lg:flex-row flex-col text-gray-300 hover:text-gray-100 hover:font-bold`}>
+                            <li className={`text-white ${location.pathname === '/explore' ? 'text-[#00ffea]' : ''} lg:list-none lg:gap-1 md:py-2 px-3 hover:bg-[#314969] rounded-full  flex items-center lg:flex-row flex-col text-gray-300 hover:text-gray-100 hover:font-bold`}>
                                 <span class="material-symbols-outlined">
                                     explore
                                 </span>
@@ -41,7 +47,7 @@ export default function Mainleft() {
                             </li>
                         </Link>
                         <Link to="/traintoexcellency/Frontend-build/About-us" >
-                            <li className={`text-white ${location.pathname === '/About-us' ? 'text-[#00ffea]' : ''} lg:list-none lg:gap-1 flex items-center lg:flex-row flex-col text-gray-300 hover:text-gray-100 hover:font-bold`}>
+                            <li className={`text-white ${location.pathname === '/About-us' ? 'text-[#00ffea]' : ''} lg:list-none lg:gap-1 md:py-2 px-3 hover:bg-[#314969] rounded-full  flex items-center lg:flex-row flex-col text-gray-300 hover:text-gray-100 hover:font-bold`}>
                                 <span className="material-symbols-outlined">info</span>
                                 <span>About us</span>
                             </li>

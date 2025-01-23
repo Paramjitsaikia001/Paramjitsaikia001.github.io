@@ -108,70 +108,24 @@ document.getElementById("settingNAV").addEventListener("click", (event) => {
   event.stopPropagation(); // Prevent clicks inside settingNAV from closing it
 });
 
+
+
+const fullScreen=document.getElementById("openfullScreenBtn");
+const exitFullscreen=document.getElementById("exitFullScreenBtn");
+
 document.getElementById("fullScreenBtn").addEventListener("click", function() {
   if (!document.fullscreenElement) {
     document.documentElement.requestFullscreen();
+fullScreen.classList.add("hidden");
+exitFullscreen.classList.remove("hidden");
   } else {
     if (document.exitFullscreen) {
       document.exitFullscreen();
+      fullScreen.classList.remove("hidden");
+exitFullscreen.classList.add("hidden");
     }
   }
 });
-
-// Event listeners for changing time format
-document.getElementById("12HourBtn").addEventListener("click", () => {
-  is24HourFormat = false;
-  updateTime();
-});
-
-document.getElementById("24HourBtn").addEventListener("click", () => {
-  is24HourFormat = true;
-  updateTime();
-});
-
-// Event listeners for showing/hiding options
-document.getElementById("hourSetting").addEventListener("click", () => {
-  document.getElementById("hourOptions").classList.toggle("hidden");
-});
-
-document.getElementById("themeSetting").addEventListener("click", () => {
-  document.getElementById("themeOptions").classList.toggle("hidden");
-});
-
-document.getElementById("studyTimeSetting").addEventListener("click", () => {
-  document.getElementById("studyTimeOptions").classList.toggle("hidden");
-});
-
-// Event listeners for changing themes
-document.querySelectorAll(".themeBtn").forEach(button => {
-  button.addEventListener("click", (event) => {
-    const color = event.target.getAttribute("data-color");
-    document.body.className = color; // Assuming you have CSS classes for each theme
-  });
-});
-
-// Event listener for starting the study timer
-document.getElementById("startStudyTimer").addEventListener("click", () => {
-  const studyDuration = parseInt(document.getElementById("studyDuration").value) * 60;
-  const breakDuration = parseInt(document.getElementById("breakDuration").value) * 60;
-  startStudyTimer(studyDuration, breakDuration);
-});
-
-function startStudyTimer(studyDuration, breakDuration) {
-  clearInterval(studyTimer);
-  let timeLeft = studyDuration;
-  let onBreak = false;
-
-  studyTimer = setInterval(() => {
-    if (timeLeft <= 0) {
-      onBreak = !onBreak;
-      timeLeft = onBreak ? breakDuration : studyDuration;
-      alert(onBreak ? "Break time!" : "Back to study!");
-    }
-    timeLeft--;
-    // Update the timer display if needed
-  }, 1000);
-}
 
 // Update the time every second
 setInterval(updateTime, 1000);

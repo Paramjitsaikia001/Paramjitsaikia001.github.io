@@ -42,7 +42,7 @@ export default function Mainright() {
                     </p>
 
                 </div>
-                <div className="whatisfor w-[100%] items-center flex flex-col gap-4 justify-center  relative h-[50vh] ">
+                <div className="whatisfor z-1 w-[100%] items-center flex flex-col gap-4 justify-center  relative md:h-[50vh] ">
                     <Swiper
                         pagination={{
                             dynamicBullets: true,
@@ -57,19 +57,40 @@ export default function Mainright() {
                         </SwiperSlide>
                         <SwiperSlide className='swiper-slide flex flex-col gap-3 justify-center items-center text-[#a0d4ff]'>
                             <div className="slide2Header">
-                                <h1 className="text-4xl font-bold">What is for?</h1>
+                                <h1 className="text-6xl font-bold">What is for?</h1>
                             </div>
                             <div className="slide2details text-xl text-white">
-                            <p class="styleScript italic">Discover Your Passion, Blaze Your Trail, and Build Something Extraordinary!</p>
+                                <p class="styleScript italic">Discover Your Passion, Blaze Your Trail, and Build Something Extraordinary!</p>
                             </div>
                         </SwiperSlide>
-                        <SwiperSlide className='swiper-slide'>Slide 3</SwiperSlide>
-                        <SwiperSlide className='swiper-slide'>Slide 4</SwiperSlide>
-                        <SwiperSlide className='swiper-slide'>Slide 5</SwiperSlide>
-                        <SwiperSlide className='swiper-slide'>Slide 6</SwiperSlide>
-                        <SwiperSlide className='swiper-slide'>Slide 7</SwiperSlide>
-                        <SwiperSlide className='swiper-slide'>Slide 8</SwiperSlide>
-                        <SwiperSlide className='swiper-slide'>Slide 9</SwiperSlide>
+
+                        <SwiperSlide className='swiper-slide flex flex-col gap-3 justify-center items-center text-[#a0d4ff]'>
+                            <div className="slide2Header">
+                                <h1 className="text-6xl font-bold">Development Areas</h1>
+                            </div>
+                            <div className="slide2details text-xl text-white">
+                                <p class="styleScript italic">
+                                    We cover Web, Mobile, Game Development, AI, Data Science, Blockchain, IoT, DevOps, and more.
+                                </p>
+
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='swiper-slide flex flex-col gap-3 justify-center items-center text-[#a0d4ff]'>
+                            <div className="slide2Header">
+                                <h1 className="text-6xl font-bold">Programming Languages</h1>
+                            </div>
+                            <div className="slide2details text-xl text-white">
+                                <p class="styleScript italic">Learn Python, JavaScript, C++, Swift, Kotlin, and other top languages with ease. </p>
+                            </div>
+                        </SwiperSlide>
+                        <SwiperSlide className='swiper-slide flex flex-col gap-3 justify-center items-center text-[#a0d4ff]'>
+                            <div className="slide2Header">
+                            <h1 className="text-6xl font-bold">Personalized Roadmaps</h1>
+                            </div>
+                            <div className="slide2details text-xl text-white">
+                            <p class="styleScript italic">Your personalized learning journey tailored to your goals and interests.</p>
+                            </div>
+                        </SwiperSlide>
                     </Swiper>
                 </div>
 
