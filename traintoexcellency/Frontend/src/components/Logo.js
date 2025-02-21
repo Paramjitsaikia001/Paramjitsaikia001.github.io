@@ -8,7 +8,7 @@ export default function Logo() {
                 src={appLogo}
             >
             </img>
-            <h2 className="block w-auto text-white text-xs md:text-black lg:block lg:text-sm font-bold">Train to EXCELLENCY</h2>
+            <h2 className="block w-auto text-white text-xs md:text-black lg:block lg:text-sm font-bold">DevEra</h2>
            
         </div>
     )

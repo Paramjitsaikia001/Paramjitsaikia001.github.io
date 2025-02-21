@@ -18,16 +18,22 @@ import bigdata from '../images/DevelopmentImage/bigdata_development.jpg'
 import TypingEffect from 'react-typing-effect'
 import Header from './Header'
 import MobileNav from './mobilenav'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate,useLocation} from 'react-router-dom'
+import React from 'react'
+import { useEffect } from 'react'
 export default function Development() {
     const navigate = useNavigate();
-    const backnav = useNavigate();
+    const location = useLocation();
     const routerhander = (name) => {
         navigate(`/traintoexcellency/Frontend-build/development/${name}`);
     }
     const backbutton = () => {
-        backnav('/traintoexcellency/Frontend-build/');
+        navigate('/traintoexcellency/Frontend-build/');
     }
+
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top of the page when the route changes
+    }, [location]);
     return (
         <section className="flex flex-col lg:w-[80%] w-[100%] h-[100%] gap-4">
             <div className='flex justify-center p-4'>

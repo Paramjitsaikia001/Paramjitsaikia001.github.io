@@ -1,7 +1,12 @@
 import { useState } from 'react'
 import Logo from './Logo';
 import askmeicon from '../assats/askme.svg'
+import { useNavigate } from 'react-router-dom';
 export default function Header() {
+    const navigate=useNavigate();
+    const loginhandler=()=>{
+        navigate('/traintoexcellency/Frontend-build/Register')
+    }
     const [showInput, setShowInput] = useState(false);
     const handleSearchClick = () => {
         setShowInput(!showInput);
@@ -27,7 +32,9 @@ export default function Header() {
                     </div>
                 </div>
                 <button className='px-3 py-2 bg-[#2356fd] rounded-md'>
-                    <h2 className='text-sm font-semibold text-[#ffff]'>WHO ARE YOU?</h2>
+                    <h2
+                    onClick={loginhandler}
+                    className='text-sm font-semibold text-[#ffff]'>WHO ARE YOU?</h2>
                 </button>
             </nav>
         </section>

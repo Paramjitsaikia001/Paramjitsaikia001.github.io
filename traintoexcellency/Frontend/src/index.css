@@ -27,7 +27,26 @@ code {
     monospace;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #acc2ef;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #acc2ef;
+}
 
 .swiper {
   align-items: center;

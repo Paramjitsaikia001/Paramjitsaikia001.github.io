@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
-
+import '../index.css'
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -19,6 +19,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import TypingEffect from 'react-typing-effect';
 import Header from './Header'
 import MobileNav from './mobilenav'
+import Reviews from './Review';
 export default function Mainright() {
     const nagivate = useNavigate();
     const routehander = (name) => {
@@ -26,7 +27,7 @@ export default function Mainright() {
     }
 
     return (
-        <section className={` flex flex-col lg:w-[80%] w-[100%]  h-full gap-4 `}>
+        <section className={` flex flex-col lg:w-[80%] w-[100%]  h-full gap-4 global-scroll-bar`}>
             <div className='flex justify-between py-4 px-4'>
                 <Header />
             </div>
@@ -85,10 +86,10 @@ export default function Mainright() {
                         </SwiperSlide>
                         <SwiperSlide className='swiper-slide flex flex-col gap-3 justify-center items-center text-[#a0d4ff]'>
                             <div className="slide2Header">
-                            <h1 className="text-6xl font-bold">Personalized Roadmaps</h1>
+                                <h1 className="text-6xl font-bold">Personalized Roadmaps</h1>
                             </div>
                             <div className="slide2details text-xl text-white">
-                            <p class="styleScript italic">Your personalized learning journey tailored to your goals and interests.</p>
+                                <p class="styleScript italic">Your personalized learning journey tailored to your goals and interests.</p>
                             </div>
                         </SwiperSlide>
                     </Swiper>
@@ -185,6 +186,7 @@ export default function Mainright() {
                         </div>
                     </div>
                 </div>
+                <Reviews/>
             </main>
             <Footer />
             <MobileNav />

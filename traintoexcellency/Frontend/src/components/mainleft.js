@@ -5,7 +5,7 @@ import AIChatIcon from '../assats/askme.svg';
 export default function Mainleft() {
     const location = useLocation();
     return (
-        <section className=" transition-all duration-500 ease-linear transform origin-left hidden md:flex md:flex-col md:h-[100vh] md:sticky md:top-0 md:items-center justify-between  md:w-[20%] md:p-0 md:m-0 md:bg-gray-800 md:border-r-2 md:border-gray-600">
+        <section className="  hidden md:flex md:flex-col md:h-[100vh] md:sticky md:top-0 md:items-center justify-between  md:w-[20%] md:p-0 md:m-0 md:bg-gray-800 md:border-r-2 md:border-gray-600">
 
             <section className="flex flex-col items-center gap-10 h-[65vh] w-[100%] pt-8">
                 <Logo />
