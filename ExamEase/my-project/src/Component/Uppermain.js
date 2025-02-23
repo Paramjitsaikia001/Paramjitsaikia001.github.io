@@ -52,7 +52,7 @@ const Uppermain = () => {
         </p>
       </div>
       <div className="start-btn mt-8">
-         <Link to="/categories" className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">
+         <Link to="/ExamEase/my-project/build/categories" className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600 transition">
           {buttonText}
         </Link>
       </div>
