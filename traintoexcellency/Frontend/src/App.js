@@ -1,7 +1,7 @@
 
 import React from 'react';
 
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
 import Main_left from './components/mainleft';
 import Main_right from './components/mainright';
 import Development from './components/Development';
@@ -19,6 +19,7 @@ import AppDev from './components/DevelopmentRoutes/APPdevelopment/appdevelopmet'
 import Webdev from './components/DevelopmentRoutes/webdevelopmentRoutes/webdevelopment';
 import AiChatPage from './components/AiChatPage';
 function App() {
+
   return (
       <Router>
         <main className='flex p-0 m-0 bg-gray-800 font-[Raleway] '>
