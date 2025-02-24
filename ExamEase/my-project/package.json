@@ -2,7 +2,7 @@
   "name": "my-project",
   "version": "0.1.0",
   "private": true,
-  "homepage":"https://Paramjitsaikia001.github.io/ExamEase/my-project/build",
+ "homepage": "https://paramjitsaikia001.github.io/ExamEase",
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "@testing-library/dom": "^10.4.0",

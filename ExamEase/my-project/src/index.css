@@ -18,7 +18,7 @@ code {
 }
 
 .bg-main {
-  background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/background.jpeg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/background.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,16 +26,26 @@ code {
   width: 100vw;
   opacity: 1px;
 }
+
 /* Custom scrollbar styles */
 .categories-container::-webkit-scrollbar {
-  height: 5px; /* Height of the horizontal scrollbar */
+  height: 5px;
+  /* Height of the horizontal scrollbar */
 }
 
 .categories-container::-webkit-scrollbar-thumb {
-  background-color: #ffffff; /* Color of the scrollbar thumb */
-  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+  background-color: #ffffff;
+  /* Color of the scrollbar thumb */
+  border-radius: 10px;
+  /* Rounded corners for the scrollbar thumb */
 }
 
 .categories-container::-webkit-scrollbar-track {
-  background-color: #00e1ff; /* Color of the scrollbar track */
+  background-color: #00e1ff;
+  /* Color of the scrollbar track */
+}
+
+.Uppermain-bgcolor {
+  background: rgb(212,245,255);
+  background: linear-gradient(90deg, rgba(212,245,255,1) 6%, rgba(94,214,234,1) 6%, rgba(0,189,218,1) 14%, rgba(212,245,255,1) 14%, rgba(223,248,251,1) 21%, rgba(0,189,218,1) 21%, rgba(64,206,228,1) 28%, rgba(223,248,251,1) 28%, rgba(255,255,240,1) 37%, rgba(0,189,218,1) 37%, rgba(0,189,218,1) 45%, rgba(174,242,255,1) 45%, rgba(212,245,255,1) 54%, rgba(0,189,218,1) 54%, rgba(0,189,218,1) 63%, rgba(212,245,255,1) 63%, rgba(212,245,255,1) 71%, rgba(0,189,218,1) 71%, rgba(0,189,218,1) 79%, rgba(195,247,255,1) 79%, rgba(179,245,255,1) 87%, rgba(0,189,218,1) 87%, rgba(0,189,218,1) 95%, rgba(217,250,255,1) 95%);
 }

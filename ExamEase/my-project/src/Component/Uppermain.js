@@ -23,7 +23,7 @@ const Uppermain = () => {
   const [tagline1, tagline2, buttonText] = getTagline();
 
   return (
-    <main className={`bg-[#6eb5f8] h-[80vh] flex flex-col justify-between items-center p-4 w-full  ${darkMode ? 'bg-black text-white' : 'bg-[#9ff4ff] text-black'}`}>
+    <main className={` Uppermain-bgcolor h-[80vh] flex flex-col justify-between items-center p-4 w-full  ${darkMode ? 'bg-black text-white' : 'bg-[#9ff4ff] text-black'}`}>
       <header className='z-0 flex justify-between text-white w-full items-center'>
         <div className="logo mb-4 md:mb-0">
           <h2 className="text-2xl md:text-3xl font-extrabold">ExamEase</h2>
