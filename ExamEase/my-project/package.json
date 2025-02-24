@@ -2,7 +2,7 @@
   "name": "my-project",
   "version": "0.1.0",
   "private": true,
- "homepage": "https://paramjitsaikia001.github.io/ExamEase",
+ "homepage": "https://paramjitsaikia001.github.io/ExamEase/Build-folder",
   "dependencies": {
     "@heroicons/react": "^1.0.6",
     "@testing-library/dom": "^10.4.0",
@@ -18,11 +18,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "predeploy": "npm run build",
-"deploy": "gh-pages -d build"
-
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
