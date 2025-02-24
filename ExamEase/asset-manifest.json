@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/ExamEase/static/css/main.ecbb576d.css",
+    "main.js": "/ExamEase/static/js/main.51a0e673.js",
+    "static/js/453.0a36081d.chunk.js": "/ExamEase/static/js/453.0a36081d.chunk.js",
+    "static/media/logic.png": "/ExamEase/static/media/logic.31f264f5c424e3c212e0.png",
+    "static/media/world.png": "/ExamEase/static/media/world.b42e0e1235ad46d3c1bd.png",
+    "static/media/english.png": "/ExamEase/static/media/english.d558d40e4284c7fd6ee8.png",
+    "static/media/news.png": "/ExamEase/static/media/news.20afdc4c309970673861.png",
+    "static/media/s&t.png": "/ExamEase/static/media/s&t.b69debec0d62e6dec74c.png",
+    "static/media/history.png": "/ExamEase/static/media/history.5d1b8113e9dca807e124.png",
+    "static/media/ai.png": "/ExamEase/static/media/ai.e22227c64be12d7b7c20.png",
+    "static/media/movies.png": "/ExamEase/static/media/movies.9b06f88faf5c6c9bcedf.png",
+    "static/media/GK.png": "/ExamEase/static/media/GK.2200a25c29d05e8fec68.png",
+    "static/media/sports.png": "/ExamEase/static/media/sports.8976c9fbb9cacdad631c.png",
+    "static/media/webdevelopment.png": "/ExamEase/static/media/webdevelopment.faae2c78879e67624285.png",
+    "static/media/fitness.png": "/ExamEase/static/media/fitness.02b7a17a6012da3d4769.png",
+    "static/media/cybersecurity.png": "/ExamEase/static/media/cybersecurity.21b93164bb3d80b96b6e.png",
+    "static/media/programming.png": "/ExamEase/static/media/programming.578bd24de9594ba19bdf.png",
+    "static/media/math.png": "/ExamEase/static/media/math.665c3a38be2aae7fb5e2.png",
+    "static/media/background.jpeg": "/ExamEase/static/media/background.dd1b3a90bb9b3974103f.jpeg",
+    "index.html": "/ExamEase/index.html",
+    "main.ecbb576d.css.map": "/ExamEase/static/css/main.ecbb576d.css.map",
+    "main.51a0e673.js.map": "/ExamEase/static/js/main.51a0e673.js.map",
+    "453.0a36081d.chunk.js.map": "/ExamEase/static/js/453.0a36081d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ecbb576d.css",
+    "static/js/main.51a0e673.js"
+  ]
+}
