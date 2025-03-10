@@ -64,7 +64,7 @@ export default function Development() {
                     </div>
                     <div className='development-container flex flex-wrap gap-5 py-4 border-t-2'>
 
-                        <div className="AIML flex flex-col gap-2 w-[98%] md:w-[32%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
+                        <div className="AIML hover:shadow-pink-700 flex flex-col gap-2 w-[98%] md:w-[32%] min-h-48 bg-[#acc2ef] items-center py-2 border-0 rounded-lg">
                             <img className='w-[96%] h-auto border-0 rounded-lg'
                                 src={AIML}
                                 alt='aiml img'></img>
