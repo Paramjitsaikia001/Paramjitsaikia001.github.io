@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #000000;
+  --color-secondary: #ff9b0669;
+  --color-accent: #0020C2;
+  --color-lines:#3f3f3f;
+  --color-gradient: linear-gradient(to right, #0020C2, #ffffff);
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+  transform-style: preserve-3d; /* Important for 3D effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image:hover {
+  transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@theme {
+  --animate-wiggle: wiggle 6s linear infinite;
+  @keyframes wiggle {
+    from{
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  --animate-hello:hello 2s linear infinite;
+  @keyframes hello {
+      from{
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(15deg);
+    }
+  }
+}
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+input{
+  padding: 0.5rem 2rem;
+}
